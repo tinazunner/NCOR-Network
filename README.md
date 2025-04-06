@@ -1,4 +1,4 @@
-# The Ontology Research & Development Network Website
+# NCOR Network Website
 
 ![CCO Banner](website/static/img/cco-banner.png)
 
