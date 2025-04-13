@@ -589,3 +589,44 @@ article h1:first-child {
     }
   }
 */
+
+/* Change text selection color to gold */
+::selection {
+  background-color: rgba(174, 140, 39, 0.3); /* Light gold with transparency */
+  color: inherit;
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: rgba(174, 140, 39, 0.3); /* Light gold with transparency */
+  color: inherit;
+}
+
+/* Join NCOR button in navbar */
+.navbar-join-button {
+  background-color: #9e7418;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.navbar-join-button:hover {
+  background-color: #7d5c13;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode adjustments if needed */
+html[data-theme='dark'] .navbar-join-button {
+  background-color: #ae8c27;
+}
+
+html[data-theme='dark'] .navbar-join-button:hover {
+  background-color: #c8a230;
+}

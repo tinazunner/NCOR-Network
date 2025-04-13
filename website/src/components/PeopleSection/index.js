@@ -88,7 +88,7 @@ export default function PeopleSection() {
             </p>
           </div>
           <div className={styles.joinButtons}>
-            <Link className={styles.button} to="#">
+            <Link className={styles.button} to="/join">
               Join NCOR
             </Link>
           </div>

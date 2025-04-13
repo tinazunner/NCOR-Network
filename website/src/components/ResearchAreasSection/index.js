@@ -7,32 +7,32 @@ export default function ResearchAreasSection() {
     {
       title: 'Foundational Ontology',
       description: 'Research on top-level categories and relations for building consistent domain ontologies.',
-      link: '/docs/research/foundational-ontology'
+      link: '/docs/research/areas#foundational-ontology'
     },
     {
       title: 'Biomedical Ontologies',
       description: 'Development and application of ontologies in medicine, biology, and healthcare.',
-      link: '/docs/research/biomedical-ontologies'
+      link: 'docs/research/areas#biomedical-ontologies'
     },
     {
       title: 'Semantic Interoperability',
       description: 'Enabling effective communication between different systems and ontologies.',
-      link: '/docs/research/semantic-interoperability'
+      link: '/docs/research/areas#semantic-interoperability'
     },
     {
       title: 'Ontology Methodology',
       description: 'Principles and methods for designing, evaluating, and applying ontologies.',
-      link: '/docs/research/ontology-methodology'
+      link: '/docs/research/areas#ontology-methodology'
     },
     {
       title: 'Ontology Engineering',
       description: 'Tools and techniques for building, maintaining, and evolving ontologies.',
-      link: '/docs/research/ontology-engineering'
+      link: '/docs/research/areas#ontology-engineering'
     },
     {
-      title: 'Formal Ontology',
-      description: 'Philosophical and logical foundations of ontological representation.',
-      link: '/docs/research/formal-ontology'
+      title: 'Industrial Ontologies',
+      description: 'Ontologies for industrial applications, including manufacturing, supply chain, and product lifecycle management.',
+      link: '/docs/research/areas#industrial-ontologies'
     }
   ];
 
@@ -86,7 +86,7 @@ export default function ResearchAreasSection() {
 
         <div className={styles.viewAllContainer}>
           <Link
-            to="/docs/research"
+            to="/docs/research/areas"
             className={styles.viewAllButton}
           >
             View All Research{' '}

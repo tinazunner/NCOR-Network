@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'The Ontology Research & Development Network',
+  title: 'An Ontology Research & Development Network',
   tagline: 'Advancing ontology research, education, and implementation across domains',
   favicon: 'img/favicon.ico',
 
@@ -75,27 +75,71 @@ const config = {
         },
         items: [
           {
-            to: '/docs/about/board',
+            type: 'doc',
+            docId: 'get-started',
             position: 'right',
+            label: 'Get Started',
+          },
+          {
+            type: 'dropdown',
             label: 'About',
-            activeBasePath: '/docs/about',
+            position: 'right',
+            items: [
+              {
+                label: 'Mission',
+                to: '/docs/about/mission',
+              },
+              {
+                label: 'What is Ontology',
+                to: '/docs/about/what-is-ontology',
+              },
+              {
+                label: 'Ontology for AI',
+                to: '/docs/about/ontology-for-ai',
+              },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Research',
+            position: 'right',
+            items: [
+              {
+                label: 'Areas',
+                to: '/docs/research/areas',
+              },
+              {
+                label: 'Projects',
+                to: '/docs/research/projects',
+              },
+              {
+                label: 'Publications',
+                to: '/docs/research/publications',
+              },
+            ],
           },
           {
             to: '/docs/support/office-hours',
             position: 'right',
-            label: 'Support',
-            activeBasePath: '/docs/support',
+            label: 'Events',
+            activeBasePath: '/docs/events',
           },
           {
-            to: '/docs/design-patterns/geospatial-tracking',
+            to: '/docs/affiliates',
             position: 'right',
-            label: 'Design Patterns',
-            activeBasePath: '/docs/design-patterns',
+            label: 'Affiliates',
+            activeBasePath: '/docs/affiliates',
           },
           {
             href: 'https://github.com/NCOR-Organization',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            to: '/join',
+            label: 'Join NCOR',
+            position: 'right',
+            className: 'button button--primary navbar-join-button',
           },
         ],
       },
@@ -194,7 +238,7 @@ const config = {
       },
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: false,
+        disableSwitch: true,
         respectPrefersColorScheme: false,
       },
     }),
@@ -202,6 +246,26 @@ const config = {
     {
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap',
       type: 'text/css',
+    },
+  ],
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'text/javascript',
+        src: 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'text/javascript',
+      },
+      innerHTML: `
+        (function(){
+          emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS user ID
+        })();
+      `,
     },
   ],
 };

@@ -175,7 +175,7 @@ function HomepageHeader() {
             color: '#9e7418', 
             margin: '0 0 1rem 0' 
           }}>
-            The Ontology Research & Development Network
+            An Ontology Research & Development Network
           </h1>
           <p style={{ 
             fontSize: '1.25rem', 
@@ -184,8 +184,8 @@ function HomepageHeader() {
             color: '#333333', 
             lineHeight: '1.6' 
           }}>
-            An international non-profit organization fostering the development of National Centers for Ontological Research 
-            across diverse cultures, ensuring disambiguation, interoperability, and robust foundations for AI systems.
+            The NCOR Network is an international non-profit organization fostering ontology engineering best practices 
+            that enable interoperability for robust AI systems.
           </p>
           <div>
             <a
@@ -200,7 +200,7 @@ function HomepageHeader() {
                 borderRadius: '4px',
                 textDecoration: 'none'
               }}
-              href="/docs/get-started">
+              href="/join">
               Join NCOR
             </a>
             <a
@@ -253,22 +253,21 @@ export default function Home() {
         <div className="container padding-vert--xl">
           <div className="row">
             <div className="col col--8 col--offset-2">
-              <Heading as="h2" className="text--center margin-bottom--lg">NCOR Vision</Heading>
+              <Heading as="h2" className="text--center margin-bottom--lg">Why NCOR?</Heading>
               <div className="margin-bottom--xl" style={{ textAlign: 'justify' }}>
                 <p>
-                  The Ontology Research & Development Network (also known as NCOR) is a global non-profit organization dedicated to advancing the field of ontology 
-                  through fostering National Centers for Ontological Research in different countries around the world. We serve as a 
-                  coordinating hub for ontological research, education, and practical implementation across diverse cultural perspectives.
+                  The NCOR Network is a global non-profit organization dedicated to advancing the field of ontology by serving as a coordinating hub
+                  for ontological research, education, and practical implementation across diverse perspectives.
                 </p>
                 <p>
-                  Our mission is to encourage the emergence of national ontology centers that capture the uniqueness of different cultures 
+                  Our mission is to encourage the emergence of ontology centers that capture unique domain knowledge 
                   while maintaining rigorous standards for disambiguation and interoperability. By embracing diverse philosophical traditions 
-                  and cultural frameworks, we aim to develop richer, more nuanced ontological resources that benefit humanity.
+                  and technological frameworks, we aim to develop richer, more nuanced ontological resources that benefit humanity.
                 </p>
                 <p>
-                  The Ontology Research & Development Network facilitates collaboration between academic institutions, government agencies, and industry partners worldwide. 
-                  Our work supports critical applications in defense, intelligence, healthcare, manufacturing, and emerging AI systems where precise, 
-                  culturally-informed data representation and cross-cultural interoperability are essential for global cooperation.
+                  NCOR Network facilitates collaboration between academic institutions, government agencies, and industry partners worldwide. 
+                  Our work supports critical applications in defense, intelligence, healthcare, manufacturing, and emerging AI systems where precise 
+                  data-driven representation and interoperability are essential for global cooperation.
                 </p>
                 <div className="text--center margin-top--lg">
                   <Link

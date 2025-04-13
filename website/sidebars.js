@@ -20,28 +20,37 @@ const sidebars = {
     {
       type: 'category',
       label: 'About',
-      link: {
-        type: 'doc',
-        id: 'about/mission',
-      },
       items: [
         'about/mission',
-        'about/board',
-        'about/affiliates',
-        'about/users',
-        'about/publications'
+        'about/what-is-ontology',
+        'about/ontology-for-ai',
       ]
     },
     {
       type: 'category',
-      label: 'Design Patterns',
+      label: 'Affiliates',
       link: {
         type: 'doc',
-        id: 'design-patterns/geospatial-tracking',
+        id: 'affiliates/overview',
       },
       items: [
-        'design-patterns/geospatial-tracking',
-        'design-patterns/information'
+        'affiliates/overview',
+        'affiliates/individuals',
+        'affiliates/organizations',
+        'affiliates/institutions',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Research',
+      link: {
+        type: 'doc',
+        id: 'research/areas',
+      },
+      items: [
+        'research/areas',
+        'research/projects',
+        'research/publications',
       ]
     },
     {
@@ -49,12 +58,12 @@ const sidebars = {
       label: 'Support',
       link: {
         type: 'doc',
-        id: 'support/office-hours',
+        id: 'events/office-hours',
       },
       items: [
-        'support/office-hours',
-        'support/working-groups',
-        'support/useful-links'
+        'events/office-hours',
+        'events/working-groups',
+        'events/useful-links'
       ]
     }
   ]
