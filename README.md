@@ -8,7 +8,7 @@ This repository contains the website for The Ontology Research & Development Net
 
 The NCOR Network is a global federation of ontology centers driving precision, interoperability, and standardization across data systems. We unite researchers, engineers, and domain experts to solve the foundational knowledge representation challenges that underpin effective AI, defense systems, biomedical research, and cross-domain data integration.
 
-As the world's foremost ontology engineering collaborative, we maintain critical standards like the Basic Formal Ontology (ISO/IEC 21838) and the Common Core Ontologies suite, which serve as the semantic backbone for high-stakes systems where ambiguity and misalignment cannot be tolerated. Our cross-cultural approach captures unique domain knowledge while ensuring rigorous adherence to logical principles that enable machine reasoning at scale.
+As the world's foremost ontology engineering collaborative, we maintain critical standards like the Basic Formal Ontology (ISO/IEC 21838) and the Common Core Ontologies suite, which serve as the semantic backbone for high-stakes systems where ambiguity and misalignment cannot be tolerated. Our approach captures unique domain knowledge while ensuring rigorous adherence to logical principles that enable machine reasoning at scale.
 
 ## Prerequisites
 
