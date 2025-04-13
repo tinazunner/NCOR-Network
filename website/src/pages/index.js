@@ -175,7 +175,7 @@ function HomepageHeader() {
             color: '#9e7418', 
             margin: '0 0 1rem 0' 
           }}>
-            An Ontology Research & Development Network
+            The Ontology Research & Development Network
           </h1>
           <p style={{ 
             fontSize: '1.25rem', 

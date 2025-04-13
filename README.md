@@ -1,13 +1,14 @@
 # NCOR Network Website
 
-![CCO Banner](website/static/img/cco-banner.png)
+![CCO Banner](website/static/img/ncor-banner.png)
 
-This repository contains the website for The Ontology Research & Development Network, a global non-profit organization dedicated to advancing the field of ontology through fostering National Centers for Ontological Research in different countries around the world.
+This repository contains the website for The Ontology Research & Development Network, an international non-profit organization fostering ontology engineering best practices that enable interoperability for robust AI systems.
 
-## What is CCO?
+## What is NCOR?
 
-The Common Core Ontologies (CCO) is a suite of ontologies designed to provide a common framework for representing and reasoning about data across various domains. It facilitates data standardization, interoperability, and automated reasoning, making it a vital resource in fields such as defense, intelligence, and data science. CCO aims to enhance the clarity and consistency of data representation, enabling better communication and understanding among different systems and stakeholders.
+The NCOR Network is a global federation of ontology centers driving precision, interoperability, and standardization across data systems. We unite researchers, engineers, and domain experts to solve the foundational knowledge representation challenges that underpin effective AI, defense systems, biomedical research, and cross-domain data integration.
 
+As the world's foremost ontology engineering collaborative, we maintain critical standards like the Basic Formal Ontology (ISO/IEC 21838) and the Common Core Ontologies suite, which serve as the semantic backbone for high-stakes systems where ambiguity and misalignment cannot be tolerated. Our cross-cultural approach captures unique domain knowledge while ensuring rigorous adherence to logical principles that enable machine reasoning at scale.
 
 ## Prerequisites
 
