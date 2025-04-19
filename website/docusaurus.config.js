@@ -119,7 +119,7 @@ const config = {
             ],
           },
           {
-            to: '/docs/support/office-hours',
+            to: '/docs/events/office-hours',
             position: 'right',
             label: 'Events',
             activeBasePath: '/docs/events',
@@ -171,15 +171,15 @@ const config = {
               },
               {
                 label: 'Research',
-                to: '/docs/about/publications',
+                to: '/docs/research/publications',
               },
               {
                 label: 'Events',
-                to: '/docs/support/office-hours',
+                to: '/docs/events/office-hours',
               },
               {
                 label: 'People',
-                to: '/docs/about/board',
+                to: '/docs/affiliates/individuals',
               },
             ],
           },
@@ -188,7 +188,7 @@ const config = {
             items: [
               {
                 label: 'Publications',
-                to: '/docs/about/publications',
+                to: '/docs/research/publications',
               },
               {
                 label: 'Ontologies',
@@ -196,7 +196,7 @@ const config = {
               },
               {
                 label: 'Tools',
-                to: '/docs/support/useful-links',
+                to: '/docs/events/useful-links',
               },
               {
                 label: 'GitHub',
