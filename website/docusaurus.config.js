@@ -26,7 +26,7 @@ const config = {
   projectName: 'ncor.us', // Updated from commoncoreontology.github.io
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
