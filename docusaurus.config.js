@@ -45,7 +45,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Remove or update this if needed
-          editUrl: 'https://github.com/NCOR-Organization/ncor.us/tree/main/',
+          editUrl: 'https://github.com/NCOR-Organization/NCOR-Network/tree/main/',
         },
         blog: false,
         theme: {
