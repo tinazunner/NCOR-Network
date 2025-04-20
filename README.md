@@ -22,8 +22,8 @@ As the world's foremost ontology engineering collaborative, we maintain critical
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/CommonCoreOntology/cco-webpage.git
-cd cco-webpage
+git clone https://github.com/NCOR-Organization/NCOR-Network.git
+cd NCOR-Network
 ```
 
 ### 2. Install Dependencies
@@ -74,20 +74,19 @@ Cloudflare Pages automatically detects changes to the repository and builds/depl
 
 ## Project Structure
 
-```
-cco-webpage/
+NCOR-Network/
 ├── .github/workflows/  # GitHub Actions workflow files
-├── website/            # Main Docusaurus project
-│   ├── docs/           # Documentation markdown files
-│   ├── src/            # React components and custom CSS
-│   │   ├── components/ # Reusable components
-│   │   ├── css/        # Custom CSS styles
-│   │   └── pages/      # Custom React pages
-│   ├── static/         # Static assets (images, etc.)
-│   ├── docusaurus.config.js  # Main configuration
-│   └── sidebars.js     # Sidebar configuration
-└── package.json        # Root package configuration
-```
+├── docs/              # Documentation markdown files
+├── src/               # React components and custom CSS
+│   ├── components/    # Reusable components
+│   ├── css/          # Custom CSS styles
+│   └── pages/        # Custom React pages
+├── static/            # Static assets (images, etc.)
+├── wiki/             # Wiki content and documentation
+├── docusaurus.config.js  # Main configuration
+├── sidebars.js       # Main sidebar configuration
+├── wikiSidebars.js   # Wiki sidebar configuration
+└── package.json      # Project configuration
 
 ## Troubleshooting
 
@@ -135,12 +134,12 @@ If the build fails due to broken links:
    ```markdown
    ---
    sidebar_position: 3  # Controls the order in the sidebar
-   title: Data Modeling with CCO  # Page title
-   description: Learn how to model your data using CCO principles
+   title: Data Modeling with NCOR  # Page title
+   description: Learn how to model your data using NCOR principles
    slug: /design-patterns/data-modeling  # Optional: custom URL
    ---
 
-   # Data Modeling with CCO
+   # Data Modeling with NCOR
 
    This is the content of your new page...
    ```
@@ -203,4 +202,4 @@ This project is licensed under the BSD-3 License.
 
 ## Contact
 
-For questions about CCO, please contact the team at info@ncor.us
+For questions about NCOR, please contact the team at info@ncor.us
