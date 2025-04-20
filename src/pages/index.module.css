@@ -237,19 +237,3 @@
     align-items: center;
   }
 }
-
-.main {
-  padding: 2rem 0;
-}
-
-.hero {
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-}

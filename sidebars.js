@@ -29,7 +29,11 @@ const sidebars = {
     {
       type: 'category',
       label: 'Events',
-      items: ['events/office-hours', 'events/working-groups', 'events/useful-links'],
+      link: {
+        type: 'doc',
+        id: 'events/overview',
+      },
+      items: ['events/overview', 'events/office-hours', 'events/working-groups', 'events/useful-links'],
     },
     {
       type: 'category',
@@ -39,7 +43,11 @@ const sidebars = {
     {
       type: 'category',
       label: 'Affiliates',
-      items: ['affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
+      link: {
+        type: 'doc',
+        id: 'affiliates/overview',
+      },
+      items: ['affiliates/overview', 'affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
     },
   ],
 };
