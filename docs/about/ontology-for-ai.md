@@ -4,6 +4,10 @@ title: Ontology for AI
 sidebar_position: 3
 ---
 
+:::caution Work in Progress
+This document is currently under development. Content may be incomplete or subject to change.
+:::
+
 # Ontology for AI
 
 Ontologies provide a crucial foundation for AI systems by establishing standardized terminology and relationships that can be understood by both humans and machines.

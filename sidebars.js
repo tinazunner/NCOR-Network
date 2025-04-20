@@ -17,9 +17,8 @@
 const sidebars = {
   docsSidebar: [
     {
-      type: 'category',
-      label: 'Getting Started',
-      items: ['get-started'],
+      type: 'doc',
+      id: 'get-started',
     },
     {
       type: 'category',
@@ -29,11 +28,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Events',
-      link: {
-        type: 'doc',
-        id: 'events/overview',
-      },
-      items: ['events/overview', 'events/office-hours', 'events/working-groups', 'events/useful-links'],
+      items: ['events/office-hours', 'events/working-groups', 'events/meetings-workshops'],
     },
     {
       type: 'category',
@@ -43,11 +38,19 @@ const sidebars = {
     {
       type: 'category',
       label: 'Affiliates',
-      link: {
-        type: 'doc',
-        id: 'affiliates/overview',
-      },
-      items: ['affiliates/overview', 'affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
+      items: ['affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
+    },
+    {
+      type: 'doc',
+      id: 'faq',
+    },
+    {
+      type: 'doc',
+      id: 'useful-links',
+    },
+    {
+      type: 'doc',
+      id: 'support',
     },
   ],
 };

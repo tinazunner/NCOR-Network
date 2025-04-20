@@ -23,7 +23,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'NCOR-Organization', // Updated from CommonCoreOntology
-  projectName: 'ncor.us', // Updated from commoncoreontology.github.io
+  projectName: 'NCOR-Network', // Updated from commoncoreontology.github.io
   trailingSlash: false,
 
   onBrokenLinks: 'ignore',
@@ -52,6 +52,20 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+  
+  // Add the wiki as a separate plugin instead of in the preset
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'wiki',
+        path: 'wiki',
+        routeBasePath: 'wiki',
+        sidebarPath: require.resolve('./wikiSidebars.js'),
+        editUrl: 'https://github.com/NCOR-Organization/ncor.us/tree/main/',
+      },
     ],
   ],
 
@@ -111,6 +125,11 @@ const config = {
                 to: '/docs/research/publications',
               },
             ],
+          },
+          {
+            to: '/wiki',
+            position: 'right',
+            label: 'Wiki',
           },
           {
             to: '/docs/events/office-hours',
