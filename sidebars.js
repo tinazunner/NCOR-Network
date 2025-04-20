@@ -12,7 +12,7 @@
 
  Create as many sidebars as you want.
 
- @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
+ @type {any} SidebarsConfig
  */
 const sidebars = {
   docsSidebar: [
@@ -53,6 +53,6 @@ const sidebars = {
       id: 'support',
     },
   ],
-};
+}
 
 module.exports = sidebars;

@@ -618,3 +618,10 @@ html[data-theme='dark'] .navbar-join-button:hover {
   margin-top: 1.5rem;      /* Reduced from default */
   margin-bottom: 0.75rem;  /* Reduced from default */
 }
+
+/* Ensure announcement bar is visible */
+div[class^='announcementBar_'] {
+  display: block !important;
+  z-index: 1000 !important;
+  position: relative !important;
+}

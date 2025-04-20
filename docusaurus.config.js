@@ -64,7 +64,7 @@ const config = {
         path: 'wiki',
         routeBasePath: 'wiki',
         sidebarPath: require.resolve('./wikiSidebars.js'),
-        editUrl: 'https://github.com/NCOR-Organization/ncor.us/tree/main/',
+        editUrl: 'https://github.com/NCOR-Organization/NCOR-Network/tree/main/',
       },
     ],
   ],
@@ -138,7 +138,7 @@ const config = {
             activeBasePath: '/docs/events',
           },
           {
-            to: '/docs/affiliates',
+            to: '/docs/affiliates/individuals',
             position: 'right',
             label: 'Affiliates',
             activeBasePath: '/docs/affiliates',
@@ -253,6 +253,14 @@ const config = {
         defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
+      },
+      announcementBar: {
+        id: 'wip_announcement',
+        content: 
+          '🚧 <strong>WORK IN PROGRESS:</strong> The NCOR Network website is currently under development. Some features and content may be incomplete. 🚧',
+        backgroundColor: '#FEF6E4', // Light gold background
+        textColor: '#9e7418',        // Gold text to match your theme
+        isCloseable: false,          // Make it persistent
       },
     }),
   stylesheets: [
