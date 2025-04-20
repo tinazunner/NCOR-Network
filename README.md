@@ -1,6 +1,8 @@
 # NCOR Network Website
 
-![CCO Banner](website/static/img/ncor-banner.png)
+![NCOR Banner](./static/img/ncor-banner.png)
+
+[![Deployed with Cloudflare Pages](https://img.shields.io/badge/Deployed_with-Cloudflare_Pages-orange?logo=cloudflare)](https://pages.cloudflare.com/)
 
 This repository contains the website for The Ontology Research & Development Network, an international non-profit organization fostering ontology engineering best practices that enable interoperability for robust AI systems.
 
@@ -57,19 +59,18 @@ This will start the server at http://localhost:3000/
 
 ### 5. Deployment
 
-The website is deployed using Cloudflare Pages with **Yarn** as the package manager.
+This website is deployed using Cloudflare Pages with automatic deployments triggered whenever changes are pushed to the main branch.
 
-### Important Notes:
-- Always commit the `yarn.lock` file to the repository
-- Do not use npm for package management to avoid deployment issues
-- The build command is set to `yarn build`
-- The build output directory is `build`
+### Deployment Configuration
 
-If you need to modify package dependencies:
-```bash
-yarn add package-name    # Add a dependency
-yarn remove package-name # Remove a dependency
-```
+- **Build Command**: `npm run build`
+- **Build Output Directory**: `build`
+- **Node.js Version**: 18
+
+Cloudflare Pages automatically detects changes to the repository and builds/deploys the site, providing:
+- Global CDN distribution
+- Automatic HTTPS
+- Preview deployments for pull requests
 
 ## Project Structure
 
