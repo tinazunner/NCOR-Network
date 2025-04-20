@@ -95,9 +95,17 @@ We welcome contributions to improve the NCOR Network website. Please follow thes
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## Deployment
+Deployment
 
-The website is automatically deployed via GitHub Actions when changes are pushed to the main branch.
+The website is deployed using Cloudflare Pages. When changes are pushed to the main branch, Cloudflare automatically builds and deploys the website.
+
+Deployment Configuration:
+
+- Build command: npm run build
+- Build output directory: build
+- Root directory: /
+
+Cloudflare Pages handles continuous deployment, automatic HTTPS, and global CDN distribution to ensure fast loading times for users worldwide.
 
 ## License
 
