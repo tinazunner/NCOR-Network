@@ -74,6 +74,7 @@ Cloudflare Pages automatically detects changes to the repository and builds/depl
 
 ## Project Structure
 
+```
 NCOR-Network/
 ├── .github/workflows/  # GitHub Actions workflow files
 ├── docs/              # Documentation markdown files
@@ -87,6 +88,7 @@ NCOR-Network/
 ├── sidebars.js       # Main sidebar configuration
 ├── wikiSidebars.js   # Wiki sidebar configuration
 └── package.json      # Project configuration
+```
 
 ## Troubleshooting
 
