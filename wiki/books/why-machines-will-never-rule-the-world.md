@@ -4,7 +4,7 @@ title: Why Machines Will Never Rule the World
 sidebar_position: 2
 ---
 
-by Jobst Landgrebe (Author), Barry Smith (Author)
+by [Jobst Landgrebe](https://www.amazon.com/stores/Jobst-Landgrebe/author/B0F2P33BBF) (Author), [Barry Smith](https://www.amazon.com/stores/Barry-Smith/author/B001HMU9XS) (Author)
 
 ![Why Artificial Intelligence Will Never Rule the World](/img/why-artificial-intelligence-will-never-rule-the-world.jpg)
 

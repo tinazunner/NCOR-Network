@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'An Ontology Research & Development Network',
+  title: 'The Ontology Research & Development Network',
   tagline: 'Advancing ontology research, education, and implementation across domains',
   favicon: 'img/favicon.ico',
 
