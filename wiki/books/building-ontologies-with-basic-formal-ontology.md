@@ -3,13 +3,16 @@ id: building-ontologies-with-basic-formal-ontology
 title: Building Ontologies with Basic Formal Ontology
 sidebar_position: 1
 ---
+by [Robert Arp](https://www.amazon.com/stores/Robert-Arp/author/B001ILHJJA) (Author), [Barry Smith](https://www.amazon.com/stores/Barry-Smith/author/B001HMU9XS) (Author), Andrew D. Spear (Author)
 
-This book is a guide to building ontologies using Basic Formal Ontology (BFO). It is a practical guide that will help you understand the concepts of BFO and how to use them to build ontologies.
+![Building Ontologies with Basic Formal Ontology](/img/building-ontologies-with-basic-formal-ontologies.png)
 
-## Authors
+## About the book
 
-**Robert Arp, Barry Smith, and Andrew Spear**  
-MIT Press
+An introduction to the field of applied ontology with examples derived particularly from biomedicine, covering theoretical components, design practices, and practical applications.
+In the era of “big data,” science is increasingly information driven, and the potential for computers to store, manage, and integrate massive amounts of data has given rise to such new disciplinary fields as biomedical informatics. Applied ontology offers a strategy for the organization of scientific information in computer-tractable form, drawing on concepts not only from computer and information science but also from linguistics, logic, and philosophy. This book provides an introduction to the field of applied ontology that is of particular relevance to biomedicine, covering theoretical components of ontologies, best practices for ontology design, and examples of biomedical ontologies in use.
+
+After defining an ontology as a representation of the types of entities in a given domain, the book distinguishes between different kinds of ontologies and taxonomies, and shows how applied ontology draws on more traditional ideas from metaphysics. It presents the core features of the Basic Formal Ontology (BFO), now used by over one hundred ontology projects around the world, and offers examples of domain ontologies that utilize BFO. The book also describes Web Ontology Language (OWL), a common framework for Semantic Web technologies. Throughout, the book provides concrete recommendations for the design and construction of domain ontologies.
 
 ## Detailed Table of Contents
 

@@ -127,9 +127,31 @@ const config = {
             ],
           },
           {
-            to: '/wiki',
-            position: 'right',
+            type: 'dropdown',
             label: 'Wiki',
+            position: 'right',
+            items: [
+              {
+                label: 'Ontology 101',
+                to: '/wiki/ontology-101',
+              },
+              {
+                label: 'Courses',
+                to: '/wiki/courses/barry-smith',
+              },
+              {
+                label: 'Ontologies',
+                to: '/wiki/ontologies/basic-formal-ontology',
+              },
+              {
+                label: 'Books',
+                to: '/wiki/books/why-machines-will-never-rule-the-world',
+              },
+              {
+                label: 'Glossary',
+                to: '/wiki/glossary',
+              },
+            ],
           },
           {
             to: '/docs/events/office-hours',
