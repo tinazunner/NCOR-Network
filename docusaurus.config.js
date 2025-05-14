@@ -36,6 +36,9 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  
+  // Explicitly exclude the resources directory from static files copying
+  staticDirectories: ['static'],
 
   presets: [
     [
@@ -46,6 +49,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Remove or update this if needed
           editUrl: 'https://github.com/NCOR-Organization/NCOR-Network/tree/main/',
+          exclude: ['resources/**'],
         },
         blog: false,
         theme: {
@@ -65,6 +69,7 @@ const config = {
         routeBasePath: 'wiki',
         sidebarPath: require.resolve('./wikiSidebars.js'),
         editUrl: 'https://github.com/NCOR-Organization/NCOR-Network/tree/main/',
+        exclude: ['resources/**'],
       },
     ],
   ],

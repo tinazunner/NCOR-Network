@@ -1,0 +1,3 @@
+# Exclude resources directory from Cloudflare builds
+resources/
+resources/**/* 

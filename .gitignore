@@ -8,6 +8,9 @@ website/build/
 .docusaurus/
 .cache-loader/
 
+# Excluded directories
+resources/
+
 # Misc
 .DS_Store
 .env.local
