@@ -15,8 +15,8 @@ The Basic Formal Ontology (BFO) is an ISO/IEC standard that serves as a foundati
 
 [Learn more](https://github.com/BFO-ontology/BFO-2020)
 
-### Common Core Ontology (CCO)
-The Common Core Ontology (CCO) is a suite of eleven vetted ontologies that collectively comprise a mid-level ontology. Initiated by CUBRC, Inc. in 2010 under an IARPA Knowledge Discovery and Dissemination grant, CCO is widely used in defense and intelligence sectors to support data standardization, interoperability, reproducibility, and automated reasoning across numerous domains. For many years, CCO development and application were conducted with limited transparency. However, as of 2017, CCO has been available under a BSD-3 license, with a public GitHub repository open to collaboration. This public availability has significantly increased interest in CCO development. Notably, in 2022, the Institute of Electrical and Electronics Engineers (IEEE) P3195 Standard for Requirements for a Mid-Level Ontology and Extensions working group initiated a review of CCO to establish it as the first mid-level ontology standard. More recently, in 2024, CCO was endorsed as a "baseline standard" for all formal ontology development across the Department of Defense and Intelligence Community.
+### Common Core Ontologies (CCO)
+The Common Core Ontologies (CCO) is a suite of eleven vetted ontologies that collectively comprise a mid-level ontology. Initiated by CUBRC, Inc. in 2010 under an IARPA Knowledge Discovery and Dissemination grant, CCO is widely used in defense and intelligence sectors to support data standardization, interoperability, reproducibility, and automated reasoning across numerous domains. For many years, CCO development and application were conducted with limited transparency. However, as of 2017, CCO has been available under a BSD-3 license, with a public GitHub repository open to collaboration. This public availability has significantly increased interest in CCO development. Notably, in 2022, the Institute of Electrical and Electronics Engineers (IEEE) P3195 Standard for Requirements for a Mid-Level Ontology and Extensions working group initiated a review of CCO to establish it as the first mid-level ontology standard. More recently, in 2024, CCO was endorsed as a "baseline standard" for all formal ontology development across the Department of Defense and Intelligence Community.
 
 [Learn more](https://github.com/CommonCoreOntology)
 
@@ -27,6 +27,6 @@ The ABI (Agent Based Intelligence) project is a Python-based backend framework d
 
 # Foundries
 
-OBO Foundry : The Open Biological and Biomedical Ontologies Foundry
-IOF Foundry : The Industrial Ontology Foundry 
-DoD-IC Foundry: The Department of Defense and Intelligence Community Ontology Foundry
+- OBO Foundry : The Open Biological and Biomedical Ontologies Foundry
+- IOF Foundry : The Industrial Ontology Foundry 
+- DoD-IC Foundry: The Department of Defense and Intelligence Community Ontology Foundry
