@@ -29,6 +29,16 @@
   --ifm-footer-background-color: #2d2d2d;
   --ifm-footer-link-hover-color: #b88b1d;
   --ifm-footer-title-color: #9e7418;
+
+  /* Design Tokens */
+  --ncor-primary: #9e7418;
+  --ncor-primary-light: #b68c2c;
+  --ncor-primary-dark: #865c14;
+  --ncor-bg-light: #FEF6E4;
+  --ncor-text: #333333;
+  --ncor-border-radius: 8px;
+  --ncor-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --ncor-transition: all 0.3s ease;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -624,4 +634,310 @@ div[class^='announcementBar_'] {
   display: block !important;
   z-index: 1000 !important;
   position: relative !important;
+}
+
+/* Card Styles */
+.card-base {
+  background: white;
+  border-radius: var(--ncor-border-radius);
+  box-shadow: var(--ncor-shadow);
+  transition: var(--ncor-transition);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-base:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styles */
+.icon-base {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--ncor-bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon-base svg {
+  width: 24px;
+  height: 24px;
+  color: var(--ncor-primary);
+}
+
+/* Grid Styles */
+.grid-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Section Spacing */
+.section-spacing {
+  padding: 4rem 0;
+}
+
+.section-spacing--large {
+  padding: 6rem 0;
+}
+
+/* Section Transitions */
+.section-transition {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-transition::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--ncor-primary-light), var(--ncor-primary-dark));
+  opacity: 0.1;
+}
+
+/* Process Steps */
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--ncor-bg-light);
+  border-radius: var(--ncor-border-radius);
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding: 1rem;
+}
+
+.process-step .icon-base {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border: 2px solid var(--ncor-primary);
+  margin-bottom: 1.5rem;
+}
+
+.process-step h3 {
+  color: var(--ncor-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-connector {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  height: 2px;
+  background: var(--ncor-primary);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Info Box Styling */
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border: 1px solid rgba(158, 116, 24, 0.2);
+  border-radius: var(--ncor-border-radius);
+  margin: 2rem 0;
+}
+
+.info-box .icon-base {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: var(--ncor-bg-light);
+  border: 2px solid var(--ncor-primary);
+}
+
+.info-box strong {
+  display: block;
+  color: var(--ncor-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-box p {
+  margin: 0;
+  color: var(--ncor-text);
+  line-height: 1.6;
+}
+
+/* Form Section Styling */
+.application-form {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--ncor-border-radius);
+  margin-top: 2rem;
+  border: 1px solid rgba(158, 116, 24, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .process-steps {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .process-step {
+    margin-bottom: 2rem;
+  }
+  
+  .step-connector {
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    top: auto;
+  }
+  
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+/* Membership Application Styles */
+.membership-section {
+  background: white;
+  border-radius: var(--ncor-border-radius);
+  box-shadow: var(--ncor-shadow);
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 4px solid var(--ncor-primary);
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--ncor-bg-light);
+  border-radius: var(--ncor-border-radius);
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding: 1rem;
+}
+
+.process-step .icon-base {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border: 2px solid var(--ncor-primary);
+  margin-bottom: 1.5rem;
+}
+
+.process-step h3 {
+  color: var(--ncor-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.step-connector {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  height: 2px;
+  background: var(--ncor-primary);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Info Box Styling */
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border: 1px solid rgba(158, 116, 24, 0.2);
+  border-radius: var(--ncor-border-radius);
+  margin: 2rem 0;
+}
+
+.info-box .icon-base {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: var(--ncor-bg-light);
+  border: 2px solid var(--ncor-primary);
+}
+
+.info-box strong {
+  display: block;
+  color: var(--ncor-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-box p {
+  margin: 0;
+  color: var(--ncor-text);
+  line-height: 1.6;
+}
+
+/* Form Section Styling */
+.application-form {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--ncor-border-radius);
+  margin-top: 2rem;
+  border: 1px solid rgba(158, 116, 24, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .process-steps {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .process-step {
+    margin-bottom: 2rem;
+  }
+  
+  .step-connector {
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    top: auto;
+  }
+  
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
 }

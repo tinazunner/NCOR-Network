@@ -75,7 +75,7 @@ If you need help with your contribution:
 
 - Review the project README and documentation
 - Ask questions in the relevant issue thread
-- Contact the team at info@ncor.us
+- Contact the team at ncornetwork@gmail.com
 
 ## Review Process
 
