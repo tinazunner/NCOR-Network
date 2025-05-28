@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from './styles.module.css';
 
 export default function Hero() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // Play at half speed
+    }
+  }, []);
+
   return (
     <div className={styles.hero}>
-      <div className={styles.container}>
+      <video
+        ref={videoRef}
+        className={styles.videoBackground}
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/videos/stids-landing-hero-video-bg.mp4" type="video/mp4" />
+      </video>
+      <div className={styles.heroOverlay} />
+      <div className={`${styles.container} ${styles.heroContent}`}>
         <h1 className={styles.heroTitle}>
           Semantic Technology for Intelligence, Defense, and Security
         </h1>
