@@ -10,6 +10,14 @@ export default function EventsSection() {
   const upcomingEvents = [
     {
       id: 1,
+      title: 'STIDS 2025',
+      description: 'Semantic Technology for Intelligence, Defense, and Security Conference featuring cutting-edge research presentations, expert keynotes, and classified sessions.',
+      date: 'October 21-23, 2025',
+      location: 'George Mason University, Woodbridge VA',
+      url: '/events/stids2025'
+    },
+    {
+      id: 2,
       title: 'NCOR Annual Meeting 2023',
       description: 'The annual gathering of NCOR members featuring keynote speeches, workshops, and presentations on the latest ontology research.',
       date: 'November 15-17, 2023',
@@ -17,7 +25,7 @@ export default function EventsSection() {
       url: '/events/ncor-annual-meeting-2023'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Ontologies in Biomedicine Workshop',
       description: 'A two-day workshop focused on recent developments and applications of ontologies in biomedical research and healthcare.',
       date: 'January 22-23, 2024',
@@ -25,7 +33,7 @@ export default function EventsSection() {
       url: '/events/ontologies-biomedicine-workshop-2024'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Formal Ontology Summer School',
       description: 'An intensive five-day summer school providing training in the foundations and applications of formal ontology.',
       date: 'June 10-14, 2024',
@@ -36,7 +44,7 @@ export default function EventsSection() {
   
   const pastEvents = [
     {
-      id: 4,
+      id: 5,
       title: 'Applied Ontology Conference 2023',
       description: 'International conference bringing together researchers from all areas of applied ontology.',
       date: 'July 18-21, 2023',
@@ -44,7 +52,7 @@ export default function EventsSection() {
       url: '/events/applied-ontology-conference-2023'
     },
     {
-      id: 5,
+      id: 6,
       title: 'BFO Workshop Series',
       description: 'A series of online workshops introducing Basic Formal Ontology (BFO) and its applications.',
       date: 'March 5-26, 2023',
@@ -52,7 +60,7 @@ export default function EventsSection() {
       url: '/events/bfo-workshop-series-2023'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Interoperability Summit 2023',
       description: 'A gathering of experts discussing challenges and solutions for semantic interoperability across domains.',
       date: 'May 9-10, 2023',
