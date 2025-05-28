@@ -1,0 +1,259 @@
+/* Common Styles */
+.section {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--ifm-heading-color);
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(180deg, #b88b1d 0%, #9e7418 50%, #865c14 100%);
+  color: white;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.heroDate {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.heroLocation {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* Cards */
+.card {
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid Layouts */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Speakers */
+.speakerCard {
+  text-align: center;
+}
+
+.speakerImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.speakerName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.speakerTitle {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1rem;
+}
+
+/* Important Dates */
+.dateCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dateIcon {
+  width: 48px;
+  height: 48px;
+  background: #b88b1d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.dateInfo h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.dateInfo p {
+  margin: 0.5rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Registration */
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pricingCard {
+  text-align: center;
+  padding: 2rem;
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.pricingCard:hover {
+  border-color: #b88b1d;
+}
+
+.pricingType {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pricingAmount {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b88b1d;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.buttonPrimary {
+  background: #b88b1d;
+  color: white;
+  border: none;
+}
+
+.buttonPrimary:hover {
+  background: #9e7418;
+  color: white;
+  text-decoration: none;
+}
+
+.buttonSecondary {
+  background: transparent;
+  color: #b88b1d;
+  border: 2px solid #b88b1d;
+}
+
+.buttonSecondary:hover {
+  background: #b88b1d;
+  color: white;
+  text-decoration: none;
+}
+
+/* Contact Form */
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formField {
+  margin-bottom: 1.5rem;
+}
+
+.formField label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: #b88b1d;
+}
+
+.formTextarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.25rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+} 
