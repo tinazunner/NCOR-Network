@@ -9,6 +9,7 @@ function JoinPage() {
     firstName: '',
     lastName: '',
     email: '',
+    githubHandle: '',
     organization: '',
     role: '',
     membershipType: 'individual',
@@ -83,70 +84,360 @@ function JoinPage() {
     setIsSubmitting(true);
     
     try {
-      // Format the email body with all form data
-      const emailBody = `
-        New NCOR Membership Application
-        
-        Name: ${formData.firstName} ${formData.lastName}
-        Email: ${formData.email}
-        Organization: ${formData.organization || 'Not provided'}
-        Role: ${formData.role || 'Not provided'}
-        Membership Type: ${formData.membershipType === 'individual' ? 'Individual' : 'Organization'}
-        
-        Interests:
-        ${formData.interests.length > 0 ? formData.interests.join(', ') : 'None selected'}
-        
-        Additional Information:
-        ${formData.message || 'None provided'}
+      // Format the issue body with all form data
+      const issueBody = `
+## New NCOR Membership Application
+
+### Contact Information
+- **Name:** ${formData.firstName} ${formData.lastName}
+- **Email:** ${formData.email}
+- **GitHub:** ${formData.githubHandle ? `@${formData.githubHandle.replace('@', '')}` : 'Not provided'}
+- **Organization:** ${formData.organization || 'Not provided'}
+- **Role:** ${formData.role || 'Not provided'}
+- **Membership Type:** ${formData.membershipType === 'individual' ? 'Individual' : 'Organization'}
+
+### Areas of Interest
+${formData.interests.length > 0 ? formData.interests.map(interest => `- ${interest}`).join('\n') : '- None selected'}
+
+### Additional Information
+${formData.message || 'None provided'}
       `;
+
+      // Redirect to GitHub's new issue page with pre-filled content
+      const issueTitle = `Membership Application: ${formData.firstName} ${formData.lastName}`;
+      const params = new URLSearchParams({
+        title: issueTitle,
+        body: issueBody,
+        labels: 'membership-application'
+      });
       
-      // Using EmailJS to send the form (you'll need to set this up)
-      // Replace with your own EmailJS credentials
-      const response = await emailjs.send(
-        'YOUR_SERVICE_ID', // Create an EmailJS account and get these values
-        'YOUR_TEMPLATE_ID',
-        {
-          to_email: 'jeremy@naas.ai',
-          from_name: `${formData.firstName} ${formData.lastName}`,
-          from_email: formData.email,
-          message: emailBody,
-          subject: `NCOR Membership Application: ${formData.firstName} ${formData.lastName}`,
-        },
-        'YOUR_USER_ID'
-      );
+      // Store form data in session storage before redirect
+      sessionStorage.setItem('formSubmissionData', JSON.stringify(formData));
       
-      if (response.status === 200) {
-        setFormStatus({
-          submitted: true,
-          success: true,
-          error: null,
-        });
-        formRef.current.reset();
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          organization: '',
-          role: '',
-          membershipType: 'individual',
-          interests: [],
-          message: '',
-        });
-      } else {
-        throw new Error('Failed to send email');
-      }
+      // Redirect to GitHub's new issue page
+      window.location.href = `https://github.com/NCOR-Organization/NCOR-Network/issues/new?${params.toString()}`;
+
     } catch (error) {
       console.error('Error submitting form:', error);
       setFormStatus({
         submitted: true,
         success: false,
-        error: 'There was a problem submitting your application. Please try again or contact us directly at info@ncor.us.',
+        error: 'There was a problem submitting your application. Please try again or contact us directly at ncornetwork@gmail.com.',
       });
-    } finally {
       setIsSubmitting(false);
     }
   };
+
+  // Add effect to check for successful submission after GitHub redirect
+  React.useEffect(() => {
+    const formData = sessionStorage.getItem('formSubmissionData');
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    if (formData && urlParams.get('issueCreated') === 'true') {
+      // Clear stored data
+      sessionStorage.removeItem('formSubmissionData');
+      
+      // Update form status
+      setFormStatus({
+        submitted: true,
+        success: true,
+        error: null
+      });
+      
+      // Reset form
+      formRef.current?.reset();
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        githubHandle: '',
+        organization: '',
+        role: '',
+        membershipType: 'individual',
+        interests: [],
+        message: '',
+      });
+    }
+  }, []);
   
+  const ApplicationSection = () => {
+    const steps = [
+      {
+        icon: (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+        ),
+        title: 'Create Profile',
+        description: 'Fill out your details and GitHub username to join our collaborative network'
+      },
+      {
+        icon: (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15.01l1.41 1.41L11 14.84V19h2v-4.16l1.59 1.59L16 15.01 12.01 11z"/>
+          </svg>
+        ),
+        title: 'Submit Application',
+        description: 'Your application will be created as a GitHub issue for transparent review'
+      },
+      {
+        icon: (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+          </svg>
+        ),
+        title: 'Get Started',
+        description: 'Once approved, collaborate on projects and access NCOR resources'
+      }
+    ];
+
+    return (
+      <div className="membership-section">
+        <div className="application-header">
+          <h2>Membership Application</h2>
+          <p>Complete the form below to join our global network of ontology researchers and practitioners</p>
+        </div>
+        
+        <div className="process-steps">
+          {steps.map((step, index) => (
+            <div key={index} className="process-step">
+              <div className="icon-base">
+                {step.icon}
+              </div>
+              <div className="step-content">
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+              {index < steps.length - 1 && <div className="step-connector" />}
+            </div>
+          ))}
+        </div>
+
+        <div className="info-box">
+          <div className="icon-base">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Why GitHub?</strong>
+            <p>NCOR uses GitHub for ontology development, documentation, and community collaboration. Your GitHub account enables:</p>
+            <ul style={{marginTop: '0.5rem', marginBottom: 0}}>
+              <li>Direct participation in ontology development</li>
+              <li>Access to project repositories and resources</li>
+              <li>Transparent application review process</li>
+              <li>Collaboration with the NCOR community</li>
+            </ul>
+          </div>
+        </div>
+
+        <form className="application-form" ref={formRef} onSubmit={handleSubmit}>
+          <div className={styles.formGrid}>
+            <div className={styles.formField}>
+              <label htmlFor="firstName">
+                <strong>First Name</strong> <span className={styles.required}>*</span>
+              </label>
+              <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                className={styles.formInput}
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            
+            <div className={styles.formField}>
+              <label htmlFor="lastName">
+                <strong>Last Name</strong> <span className={styles.required}>*</span>
+              </label>
+              <input
+                id="lastName"
+                name="lastName"
+                type="text"
+                className={styles.formInput}
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+          </div>
+          
+          <div className={styles.formGrid}>
+            <div className={styles.formField}>
+              <label htmlFor="email">
+                <strong>Email Address</strong> <span className={styles.required}>*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                className={styles.formInput}
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            
+            <div className={styles.formField}>
+              <label htmlFor="githubHandle">
+                <strong>GitHub Username</strong> <span className={styles.required}>*</span>
+              </label>
+              <input
+                id="githubHandle"
+                name="githubHandle"
+                type="text"
+                className={styles.formInput}
+                value={formData.githubHandle}
+                onChange={handleChange}
+                placeholder="e.g. johnsmith"
+                required
+              />
+            </div>
+          </div>
+          
+          <div className={styles.formField}>
+            <label htmlFor="organization">
+              <strong>Organization</strong>
+            </label>
+            <input
+              id="organization"
+              name="organization"
+              type="text"
+              className={styles.formInput}
+              value={formData.organization}
+              onChange={handleChange}
+              placeholder="University, Company, or Institution"
+            />
+          </div>
+          
+          <div className={styles.formField}>
+            <label htmlFor="role">
+              <strong>Role</strong> <span className={styles.required}>*</span>
+            </label>
+            <select
+              id="role"
+              name="role"
+              className={styles.formSelect}
+              value={formData.role}
+              onChange={handleChange}
+              required
+            >
+              <option value="" disabled>Select your role</option>
+              {roleOptions.map(option => (
+                <option key={option} value={option}>{option}</option>
+              ))}
+            </select>
+          </div>
+          
+          <div className={styles.formField}>
+            <p><strong>Membership Type</strong> <span className={styles.required}>*</span></p>
+            <div className={styles.radioGroup}>
+              <div className={styles.radioOption}>
+                <input
+                  type="radio"
+                  id="membership-individual"
+                  name="membershipType"
+                  value="individual"
+                  checked={formData.membershipType === 'individual'}
+                  onChange={handleChange}
+                  required
+                />
+                <label htmlFor="membership-individual">
+                  <span className={styles.radioButton}></span>
+                  Individual Membership
+                </label>
+              </div>
+              <div className={styles.radioOption}>
+                <input
+                  type="radio"
+                  id="membership-organization"
+                  name="membershipType"
+                  value="organization"
+                  checked={formData.membershipType === 'organization'}
+                  onChange={handleChange}
+                />
+                <label htmlFor="membership-organization">
+                  <span className={styles.radioButton}></span>
+                  Organizational Membership
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.formField}>
+            <p><strong>Areas of Interest</strong> (select all that apply)</p>
+            <div className={styles.checkboxGrid}>
+              {interestOptions.map(option => (
+                <div key={option} className={styles.checkboxOption}>
+                  <input
+                    type="checkbox"
+                    id={option.replace(/\s+/g, '-').toLowerCase()}
+                    name="interests"
+                    value={option}
+                    onChange={handleCheckbox}
+                    checked={formData.interests.includes(option)}
+                  />
+                  <label htmlFor={option.replace(/\s+/g, '-').toLowerCase()}>
+                    <span className={styles.checkbox}></span>
+                    {option}
+                  </label>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className={styles.formField}>
+            <label htmlFor="message">
+              <strong>Additional Information</strong>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              className={styles.formTextarea}
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Tell us about your background, specific interests, or how you'd like to contribute to NCOR."
+            />
+          </div>
+          
+          <div className={styles.formActions}>
+            <button
+              type="submit"
+              className={styles.submitButton}
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? (
+                <>
+                  <span className={styles.spinner}></span>
+                  Submitting...
+                </>
+              ) : (
+                'Submit Application'
+              )}
+            </button>
+          </div>
+        </form>
+      </div>
+    );
+  };
+
+  const StepIcon = ({ type }) => {
+    // Icon components for each step
+    const icons = {
+      profile: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+      ),
+      // ... Add other step icons ...
+    };
+
+    return icons[type] || null;
+  };
+
   return (
     <Layout
       title="Join NCOR"
@@ -264,195 +555,7 @@ function JoinPage() {
                 </div>
               </div>
             ) : (
-              <div className={styles.formCard}>
-                <div className={styles.formHeader}>
-                  <h2>Membership Application</h2>
-                  <p>Complete the form below to join our global network of ontology researchers and practitioners</p>
-                </div>
-                
-                <div className={styles.formBody}>
-                  {formStatus.error && (
-                    <div className={styles.errorMessage}>
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
-                      </svg>
-                      {formStatus.error}
-                    </div>
-                  )}
-                  
-                  <form ref={formRef} onSubmit={handleSubmit}>
-                    <div className={styles.formGrid}>
-                      <div className={styles.formField}>
-                        <label htmlFor="firstName">
-                          <strong>First Name</strong> <span className={styles.required}>*</span>
-                        </label>
-                        <input
-                          id="firstName"
-                          name="firstName"
-                          type="text"
-                          className={styles.formInput}
-                          value={formData.firstName}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                      
-                      <div className={styles.formField}>
-                        <label htmlFor="lastName">
-                          <strong>Last Name</strong> <span className={styles.required}>*</span>
-                        </label>
-                        <input
-                          id="lastName"
-                          name="lastName"
-                          type="text"
-                          className={styles.formInput}
-                          value={formData.lastName}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </div>
-                    
-                    <div className={styles.formField}>
-                      <label htmlFor="email">
-                        <strong>Email Address</strong> <span className={styles.required}>*</span>
-                      </label>
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        className={styles.formInput}
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    
-                    <div className={styles.formField}>
-                      <label htmlFor="organization">
-                        <strong>Organization</strong>
-                      </label>
-                      <input
-                        id="organization"
-                        name="organization"
-                        type="text"
-                        className={styles.formInput}
-                        value={formData.organization}
-                        onChange={handleChange}
-                        placeholder="University, Company, or Institution"
-                      />
-                    </div>
-                    
-                    <div className={styles.formField}>
-                      <label htmlFor="role">
-                        <strong>Role</strong> <span className={styles.required}>*</span>
-                      </label>
-                      <select
-                        id="role"
-                        name="role"
-                        className={styles.formSelect}
-                        value={formData.role}
-                        onChange={handleChange}
-                        required
-                      >
-                        <option value="" disabled>Select your role</option>
-                        {roleOptions.map(option => (
-                          <option key={option} value={option}>{option}</option>
-                        ))}
-                      </select>
-                    </div>
-                    
-                    <div className={styles.formField}>
-                      <p><strong>Membership Type</strong> <span className={styles.required}>*</span></p>
-                      <div className={styles.radioGroup}>
-                        <div className={styles.radioOption}>
-                          <input
-                            type="radio"
-                            id="membership-individual"
-                            name="membershipType"
-                            value="individual"
-                            checked={formData.membershipType === 'individual'}
-                            onChange={handleChange}
-                            required
-                          />
-                          <label htmlFor="membership-individual">
-                            <span className={styles.radioButton}></span>
-                            Individual Membership
-                          </label>
-                        </div>
-                        <div className={styles.radioOption}>
-                          <input
-                            type="radio"
-                            id="membership-organization"
-                            name="membershipType"
-                            value="organization"
-                            checked={formData.membershipType === 'organization'}
-                            onChange={handleChange}
-                          />
-                          <label htmlFor="membership-organization">
-                            <span className={styles.radioButton}></span>
-                            Organizational Membership
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className={styles.formField}>
-                      <p><strong>Areas of Interest</strong> (select all that apply)</p>
-                      <div className={styles.checkboxGrid}>
-                        {interestOptions.map(option => (
-                          <div key={option} className={styles.checkboxOption}>
-                            <input
-                              type="checkbox"
-                              id={option.replace(/\s+/g, '-').toLowerCase()}
-                              name="interests"
-                              value={option}
-                              onChange={handleCheckbox}
-                              checked={formData.interests.includes(option)}
-                            />
-                            <label htmlFor={option.replace(/\s+/g, '-').toLowerCase()}>
-                              <span className={styles.checkbox}></span>
-                              {option}
-                            </label>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    <div className={styles.formField}>
-                      <label htmlFor="message">
-                        <strong>Additional Information</strong>
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        className={styles.formTextarea}
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Tell us about your background, specific interests, or how you'd like to contribute to NCOR."
-                      />
-                    </div>
-                    
-                    <div className={styles.formActions}>
-                      <button
-                        type="submit"
-                        className={styles.submitButton}
-                        disabled={isSubmitting}
-                      >
-                        {isSubmitting ? (
-                          <>
-                            <span className={styles.spinner}></span>
-                            Submitting...
-                          </>
-                        ) : (
-                          'Submit Application'
-                        )}
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+              <ApplicationSection />
             )}
             
             <div className={styles.contactSection}>
@@ -468,7 +571,7 @@ function JoinPage() {
                   </div>
                   <div>
                     <h3>Email Us</h3>
-                    <a href="mailto:info@ncor.us">info@ncor.us</a>
+                    <a href="mailto:ncornetwork@gmail.com">ncornetwork@gmail.com</a>
                   </div>
                 </div>
                 

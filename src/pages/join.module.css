@@ -135,15 +135,17 @@
 }
 
 .formHeader {
-  padding: 2rem;
-  background-color: #f5f5f5;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-bottom: 1px solid #eaeaea;
   text-align: center;
 }
 
 .formHeader h2 {
-  margin: 0 0 0.5rem;
-  color: #333;
+  margin: 0 0 2.5rem;
+  color: #1a2a3a;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .formHeader p {
@@ -473,4 +475,148 @@
 
 .formSelect option {
   padding: 10px;
+}
+
+.processList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.processList li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.processList li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--ifm-color-primary);
+}
+
+.note {
+  background-color: var(--ifm-color-info-contrast-background);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.processContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.processStep {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.processStep:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.processIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ae8c27 0%, #c9a42a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.processArrow {
+  color: #ae8c27;
+  display: flex;
+  align-items: center;
+  transform: scale(1.5);
+}
+
+.processStep h3 {
+  margin: 0 0 1rem;
+  color: #1a2a3a;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.processStep p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.infoBox {
+  margin: 2.5rem auto 0;
+  max-width: 600px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+.infoIcon {
+  color: #ae8c27;
+  background: rgba(174, 140, 39, 0.1);
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoBox strong {
+  display: block;
+  color: #1a2a3a;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.infoBox p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .processContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .processStep {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .processArrow {
+    transform: rotate(90deg) scale(1.5);
+  }
 } 

@@ -204,4 +204,4 @@ This project is licensed under the BSD-3 License.
 
 ## Contact
 
-For questions about NCOR, please contact the team at info@ncor.us
+For questions about NCOR, please contact the team at ncornetwork@gmail.com
