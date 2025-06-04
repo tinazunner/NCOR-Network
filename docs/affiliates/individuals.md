@@ -139,3 +139,18 @@ NCOR works with leading researchers, practitioners, and educators in the field o
     </div>
   </div>
 </div> 
+
+  <div className="col col--4 margin-bottom--lg">
+    <div className="card">
+      <div className="card__image" style={{paddingTop: '20px'}}>
+        <img src="https://media.licdn.com/dms/image/v2/C4E03AQFEY_3ZpDd0NQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1611936719849?e=1754524800&v=beta&t=yiPbyQxMuKxKxVAmQuAmJ6Vri4jAPvvTQkwS5peXYNc" alt="Elena" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
+      </div>
+      <div className="card__body text--center">
+        <h3><a href="https://www.linkedin.com/in/elenamilivinti/overlay/photo/">Elena Milivinti</a></h3>
+        <p>NCOR <br/>
+        <a href="https://www.msjc.edu/philosophy/">PhD Student </a></p>
+        <p><em>TBD</em></p>
+      </div>
+    </div>
+  </div>
+</div> 
