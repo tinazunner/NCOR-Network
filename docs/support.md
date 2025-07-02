@@ -4,8 +4,8 @@ Welcome to the NCOR Network support section. Here you'll find resources to help 
 
 ## Available Resources
 
-- [Office Hours](office-hours) - Schedule of BFO-CCO virtual office hours where you can get direct assistance
-- [Working Groups](docs/events/working-groups) - Information about NCOR working groups and how to join them
+- [Office Hours](https://ncor-network.org/docs/events/office-hours) - Schedule of BFO-CCO virtual office hours where you can get direct assistance
+- [Working Groups](https://ncor-network.org/docs/events/working-groups) - Information about NCOR working groups and how to join them
 - [Useful Links](useful-links) - Collection of helpful resources, tools, and references
 
 ## Getting Help
