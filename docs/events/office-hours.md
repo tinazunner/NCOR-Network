@@ -17,9 +17,9 @@ With this in mind, the lead developers of BFO and CCO will hold biweekly "office
 * When: Biweekly on Fridays, starting May 31st 2024, 11am - 12pm
 * Where: Virtual Meetings on Teams
 
-If you are interested in joining one or more office hours, please contact [John Beverley](https://johnbeverley.com/) at johnbeve[@]buffalo.edu. You will be provided a Teams invite for the scheduled time.
+If you are interested in joining one or more office hours, please contact [John Beverley](https://johnbeverley.com/) at johnbeve@buffalo.edu. You will be provided a Teams invite for the scheduled time.
 
-In addition to the biweekly office hours, there is an associated Slack channel for the group where stakeholders may continue conversation with the BFO and CCO leads. As above, please contact [John Beverley](https://johnbeverley.com/) at johnbeve[@]buffalo.edu to be added to the BFO-CCO Office Hours Slack channel.
+In addition to the biweekly office hours, there is an associated Slack channel for the group where stakeholders may continue conversation with the BFO and CCO leads. As above, please contact [John Beverley](https://johnbeverley.com/) at johnbeve@buffalo.edu to be added to the BFO-CCO Office Hours Slack channel.
 
 As stakeholder questions are addressed, we will also establish an "FAQ" where stakeholders will be directed for vetted answers to commonly posed questions.
 
