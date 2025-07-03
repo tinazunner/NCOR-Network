@@ -6,7 +6,7 @@ export default function Hero() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // Play at half speed
+      videoRef.current.playbackRate = 0.5; 
     }
   }, []);
 
@@ -30,16 +30,20 @@ export default function Hero() {
             <line x1="12" y1="9" x2="12" y2="13"/>
             <line x1="12" y1="17" x2="12.01" y2="17"/>
           </svg>
-          Placeholder Data - Not Final Content
         </div>
         <h1 className={styles.heroTitle}>
-          Semantic Technology for Intelligence, Defense, and Security
+          Semantic Technology for Intelligence, Defense, and Security (STIDS) 2025
         </h1>
         <p className={styles.heroSubtitle}>STIDS Conference 2025</p>
-        <div className={styles.heroDate}>October 21-23, 2025</div>
+        <div className={styles.heroDate}>November 17-18, 2025</div>
         <div className={styles.heroLocation}>
           George Mason University, Potomac Science Center<br />
           650 Mason Ferry Avenue, Woodbridge VA 22191
+        </div>
+        <div className={styles.heroDate}>November 19, 2025</div>
+        <div className={styles.heroLocation}>
+          National Geospatial-Intelligence Agency (NGA)<br />
+          7500 GEOINT Dr, Springfield VA 22150
         </div>
         <div style={{ marginTop: '2rem' }}>
           <a href="#registration" className={`${styles.button} ${styles.buttonPrimary}`}>

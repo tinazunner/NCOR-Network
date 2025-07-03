@@ -99,7 +99,7 @@ export default function ContactForm() {
         }}>
           <p>
             <strong>Email:</strong>{' '}
-            <a href="mailto:contact@stids2025.com">contact@stids2025.com</a>
+            <a href="mailto:johnbeve@buffalo.edu">johnbeve@buffalo.edu</a>
           </p>
           <p>
             <strong>Location:</strong>{' '}
