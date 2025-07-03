@@ -39,6 +39,9 @@ const ApplicationSection = () => {
     'Ontology Engineering',
     'Education & Training',
     'Research Collaboration',
+    '101 Working Group',
+
+
   ];
   
   const roleOptions = [
