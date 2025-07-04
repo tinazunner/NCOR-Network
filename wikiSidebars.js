@@ -18,11 +18,6 @@ const wikiSidebars = {
       label: 'Wiki Home',
     },
     {
-      type: 'doc',
-      id: 'ontology-101',
-      label: 'Ontology 101',
-    },
-    {
       type: 'category',
       label: 'Courses',
       items: ['courses/barry-smith', 'courses/werner-ceusters', 'courses/john-beverley'],
@@ -32,9 +27,7 @@ const wikiSidebars = {
       label: 'Ontologies',
       items: [
         'ontologies/basic-formal-ontology', 
-        'ontologies/common-core-ontologies',
-        'ontologies/ontology-of-engineering', 
-        'ontologies/ontology-of-planning',
+        'ontologies/common-core-ontologies', 
         ],
     },
     {
