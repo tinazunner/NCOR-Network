@@ -289,7 +289,7 @@ export default function Home() {
                   and technological frameworks, we aim to develop richer, more nuanced ontological resources that benefit humanity.
                 </p>
                 <p>
-                  NCOR Network facilitates collaboration between academic institutions, government agencies, and industry partners worldwide. 
+                  The NCOR Network facilitates collaboration between academic institutions, government agencies, and industry partners worldwide. 
                   Our work supports critical applications in defense, intelligence, healthcare, manufacturing, and emerging AI systems where precise 
                   data-driven representation and interoperability are essential for global cooperation.
                 </p>
