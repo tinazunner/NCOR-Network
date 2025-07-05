@@ -91,7 +91,7 @@ NCOR works with leading researchers, practitioners, and educators in the field o
       </div>
       <div className="card__body text--center">
         <h3><a href="https://www.researchgate.net/scientific-contributions/Alexander-P-Cox-2039450745">Alexander P. Cox</a></h3>
-        Senior Ontologist <br> CUBRC, Inc.
+        Senior Ontologist <br/> CUBRC, Inc.
         <p><em>Research in Applied Ontology, Semantic Web for Military Intelligence, Bioinformatics, and Ontologies of Space and Neurology</em></p>
       </div>
     </div>
