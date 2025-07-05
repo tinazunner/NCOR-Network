@@ -4,10 +4,6 @@ title: Ontology for AI
 sidebar_position: 3
 ---
 
-:::caution Work in Progress
-This document is currently under development. Content may be incomplete or subject to change.
-:::
-
 # Ontology for AI
 
 Ontologies provide a crucial foundation for AI systems by establishing standardized terminology and relationships that can be understood by both humans and machines.
@@ -15,7 +11,6 @@ Ontologies provide a crucial foundation for AI systems by establishing standardi
 By embedding ontological structures into AI applications, we can ensure greater transparency, alignment with human values, and cross-cultural interoperability.
 
 ### The current AI Renaissance: beyond the hype
-
 
 <div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
   <img 
@@ -101,41 +96,9 @@ Perhaps the most pressing application of ontology-enhanced AI is addressing alig
 
 Ontologies provide the shared conceptual foundation that enables AI systems to "speak the same language" across organizational boundaries.
 
-### Let's talk about Ontologies for AI Alignment
+### Looking Ahead
 
-The time has come to bridge the gap between the ontology engineering community and AI practitioners. We propose a dedicated workshop focused on:
-
-1. **Assessment**: Evaluating the current state of ontology integration in commercial AI systems
-
-2. **Best Practices**: Developing practical guidelines for implementing ontology-enhanced AI in organizational contexts
-
-3. **Standards Development**: Creating interoperability standards for ontology-AI integration
-
-4. **Use Case Development**: Identifying high-value applications where ontological approaches solve critical AI limitations
-
-5. **Community Building**: Connecting ontology experts with AI engineers to foster collaboration
-
-We envision a multi-day event bringing together:
-- Ontology engineers and researchers
-- AI system architects and developers
-- Domain experts from critical sectors (healthcare, finance, government)
-- Enterprise architects responsible for organizational alignment
-
-The workshop would include hands-on sessions demonstrating practical integration approaches, case study presentations, and working groups focused on specific technical challenges.
-
-Looking forward, we see several promising research directions at the intersection of ontologies and AI:
-
-1. **Dynamic Ontology Evolution**: Systems that can evolve ontological structures in response to changing knowledge while maintaining logical consistency.
-
-2. **Multi-Perspective Reasoning**: Frameworks that support reasoning across multiple ontological perspectives to handle competing worldviews.
-
-3. **Neuro-Symbolic Integration**: Deeper integration of neural approaches with symbolic knowledge representation.
-
-4. **Federated Knowledge Ecosystems**: Distributed knowledge graphs that maintain local autonomy while supporting global interoperability.
-
-5. **Ontology-Driven AI Governance**: Using ontologies to specify and enforce ethical constraints on AI behavior.
-
-We stand at a unique moment in the evolution of artificial intelligence—one where the visionary ideas of the Semantic Web can finally be realized through the powerful capabilities of modern AI systems. By bringing together the precision of ontological knowledge representation with the flexibility of neural approaches, we can create AI systems that are not just powerful, but reliable, transparent, and aligned with human values.
+We stand at a unique moment in the evolution of AI—one where the visionary ideas of the Semantic Web can finally be realized through the powerful capabilities of modern AI systems. By bringing together the precision of ontological knowledge representation with the flexibility of neural approaches, we can create AI systems that are not just powerful, but reliable, transparent, and aligned with human values.
 
 The NCOR Network invites researchers, practitioners, and organizations to join us in this crucial work. Together, we can ensure that this AI summer leads not to another winter, but to a sustainable future where AI enhances human capabilities while operating within well-defined knowledge structures that reflect our understanding of the world.
 

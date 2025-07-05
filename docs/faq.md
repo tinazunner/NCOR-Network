@@ -6,7 +6,7 @@ description: Frequently Asked Questions about NCOR and its projects
 
 ### What is NCOR?
 
-NCOR (The Ontology Research & Development Network) is a global non-profit organization dedicated to advancing the field of ontology through fostering National Centers for Ontological Research in different countries around the world.
+NCOR is a global non-profit organization dedicated to advancing the field of ontology throughout the world by, for example, promoting National Centers for Ontological Research in different countries around the world.
 
 ### What is the relationship between NCOR and CCO?
 
@@ -14,11 +14,11 @@ The Common Core Ontologies (CCO) is one of the ontology projects supported by NC
 
 ### How can I establish an NCOR center in my country?
 
-Contact the NCOR leadership to discuss establishing a national center for ontological research in your country. Each center maintains its cultural uniqueness while adhering to shared standards for disambiguation and interoperability.
+Click the "Join NCOR" link and indicate your interest in starting an NCOR center. Shortly after, NCOR leadership will reach out to discuss establishing a national center for ontological research in your country. Each center maintains its cultural uniqueness while adhering to shared standards for disambiguation and interoperability.
 
 ### Where can I get training in ontology development?
 
-NCOR offers various training opportunities through its national centers, including workshops, courses, and mentorship programs. Check the [working groups](/docs/support/working-groups) page for more information.
+NCOR offers various training opportunities through its national centers, including workshops, courses, and mentorship programs. Check the [working groups](/docs/events) page for more information.
 
 ### How can ontologies help with AI systems?
 

@@ -8,18 +8,16 @@ description: Getting started with the NCOR Network
 
 # Get Started with NCOR
 
-Welcome to the Ontology Research & Development Network! This guide will help you understand what NCOR is, why you might want to join our network, and how to get involved with our various initiatives.
+Welcome to the National Center for Ontological Research (NCOR) network! This guide will help you understand what NCOR is, why you might want to join our network, and how to get involved with our various initiatives.
 
 ## What is NCOR?
 
-The National Center for Ontological Research (NCOR) is a global non-profit organization dedicated to advancing the field of ontology through fostering research centers in different countries around the world. We serve as:
+NCOR is a non-profit organization dedicated to advancing the field of ontology through fostering research centers in different countries around the world. We serve as:
 
 - A coordinating hub for ontological research and education
 - An international community of ontology experts and practitioners
-- A provider of resources for implementing ontologies in various domains
+- A provider of resources for implementing and vetting ontologies in various domains
 - A facilitator of cross-cultural ontology development
-
-NCOR promotes the development of high-quality, interoperable ontologies across diverse cultural perspectives and domains.
 
 ## Why Join NCOR?
 
@@ -32,65 +30,14 @@ Organizations and individuals join NCOR for several compelling reasons:
 - **Standards Development:** Contribute to emerging ontology standards
 - **Community:** Join a network of researchers and practitioners
 
-## How to Get Involved
+## How to Join NCOR
 
-### 1. Join Our Community
+Click on the "Join NCOR" button on the banner and tell us a bit about yourself; members of the NCOR team will reach out for a meeting to discuss the best place for you to start. 
 
-```bash
-# Subscribe to our mailing list
-# Join our Slack workspace
-# Attend our next virtual meeting
-```
+In the interim, feel free to join one or more of our events and working groups. These meetings are open to the public, remote, and free to attend (see dedicated pages for more details):
 
-### 2. Explore Our Resources
+- [Ontology 101](/docs/events/ontology-101.md) 
+- [BFO-CCO Office Hours](/docs/events/office-hours.md)
+- [Common Core Ontologies Working Group](/docs/events/common-core-ontologies.md)
+- [Semantic Mapping Working Group](/docs/events/semantic-mapping.md)
 
-NCOR supports several ontology projects including:
-
-| Project | Description |
-|-------------|-------------|
-| Basic Formal Ontology (BFO) | Upper-level ontology providing a framework for domain ontologies |
-| Common Core Ontologies (CCO) | Mid-level ontology suite bridging BFO and domain ontologies |
-| National Ontology Centers | Country-specific ontology research centers |
-
-### 3. Attend Events and Working Groups
-
-NCOR hosts regular events and working groups:
-
-- Biweekly BFO-CCO Office Hours
-- NCOR CCO Working Group meetings
-- Annual ontology conferences and workshops
-- Domain-specific ontology development initiatives
-
-## Implementation Examples
-
-Here's an example of how organizations use NCOR-supported ontologies:
-
-```turtle
-@prefix : <http://example.org/ncor-implementation#> .
-@prefix bfo: <http://purl.obolibrary.org/obo/BFO_> .
-@prefix cco: <https://github.com/CommonCoreOntology/CommonCoreOntologies/AgentOntology#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-
-# Create a culturally-specific organization type
-:JapaneseResearchCenter rdf:type owl:Class ;
-    rdfs:subClassOf cco:Organization ;
-    rdfs:label "Japanese Research Center"@en ;
-    rdfs:label "研究センター"@ja .
-```
-
-## Next Steps
-
-Once you're familiar with NCOR:
-
-1. **Explore Design Patterns** - Learn about the [ontology design patterns](/docs/design-patterns) we support
-2. **Join Working Groups** - Participate in [NCOR working groups](/docs/support/working-groups)
-3. **Attend Office Hours** - Get help at [scheduled office hours](/docs/support/office-hours)
-4. **Review Documentation** - Dive deeper into our complete documentation
-
-## Need Help?
-
-- Check the [useful links](/docs/support/useful-links) for additional resources
-- Explore our [GitHub repositories](https://github.com/NCOR-Organization)
-- Contact the NCOR team through our [working groups](/docs/support/working-groups) 

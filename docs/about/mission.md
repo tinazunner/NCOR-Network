@@ -10,7 +10,7 @@ The National Center for Ontological Research (NCOR) is dedicated to advancing th
 
 Our mission is to develop high-quality, interoperable ontologies that can be used across domains and cultures to facilitate clear communication and data integration.
 
-The National Center for Ontological Research (NCOR) was established in Buffalo by Barry Smith in 2005 with the goal of advancing the quality of ontological research and development and of establishing tools and measures for ontology evaluation and quality assurance. NCOR draws on the expertise of ontologists associated with the University at Buffalo and of their collaborators in scientific, commercial and government institutions throughout the world.
+NCOR was established in Buffalo by Barry Smith in 2005 with the goal of advancing the quality of ontological research and development and of establishing tools and measures for ontology evaluation and quality assurance. NCOR draws on the expertise of ontologists associated with the University at Buffalo and of their collaborators in scientific, commercial and government institutions throughout the world.
 
 NCOR serves as a vehicle to coordinate, enhance, publicize, and seek funding for ontological research activities. It provides coordination, infrastructure, and independent review to organizations employing ontologies in fields such as defense and intelligence, management, healthcare and biomedical sciences.
 
