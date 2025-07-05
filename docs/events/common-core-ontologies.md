@@ -1,5 +1,6 @@
 ---
 sidebar_position: 12
+id: common-core
 title: Common Core Ontologies Working Groups
 description: Common Core Ontologies Working Groups
 ---

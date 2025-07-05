@@ -1,4 +1,5 @@
 ---
+id: semantic-mapping
 sidebar_position: 3
 title: Semantic Mappings Working Group
 description: Semantic Mappings Working Group

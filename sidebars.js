@@ -28,7 +28,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Events',
-      items: ['events/office-hours', 'events/meetings-workshops'],
+      items: ['events/office-hours', 'events/meetings-workshops', 'events/ontology-101', 'events/semantic-mapping', 'events/common-core'],
     },
     {
       type: 'category',
