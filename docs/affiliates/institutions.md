@@ -76,7 +76,7 @@ Academic and research institutions play a key role in NCOR's global network, con
       </div>
       <div className="card__body text--center">
         <h3><a href="https://www.jhuapl.edu/">Johns Hopkins University Applied Physics Laboratory</a></h3>
-        <p>Research center contributing to national security through advanced science, engineering, and analysis.</p>
+        <p>University Affiliated Research Center contributing to national security through advanced science, engineering, and analysis.</p>
       </div>
     </div>
   </div>
