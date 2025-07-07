@@ -6,15 +6,15 @@ sidebar_position: 2
 
 # What is Ontology?
 
-Ontology is the philosophical study of being, existence, and reality. In information science, an ontology is a formal representation of knowledge as a set of concepts within a domain, and the relationships between those concepts.
+Ontology is the philosophical study of being, existence, and reality. In information science, an ontology is a formal representation of knowledge as a set of concepts within a domain and the relationships between those concepts.
 
-Ontologies provide a shared vocabulary for modeling a domain, including the types of objects and concepts that exist, and their properties and relations.
+Ontologies provide a shared vocabulary for modeling a domain, including the types of objects and concepts that exist and their properties and relationships.
 
-Contemporary ontology is a partnership of multiple disciplines. On the one hand ontological research involves philosophers who are concerned to describe broad categories of entities and their most basic relationships. On the other hand ontologists are working in diverse fields of computer and information science to provide more narrowly focused classification systems in areas such as bioinformatics, engineering, or defense and security.
+Contemporary ontology is an interdisciplinary field. On one hand, ontological research involves philosophers who aim to describe broad categories of entities and their most fundamental relationships. On the other hand, ontologists work in various areas of computer and information science to create more narrowly focused classification systems in domains like bioinformatics, engineering, defense, and security.
 
-Ontologists have identified a wide range of theories and methods to aid the consistent representation of data and information using classifications of this sort, called 'ontologies'. The idea, in all these cases, is that when bodies of data are annotated using well-structured ontologies, these data can be more easily retrieved, integrated and compared, and they can more easily be exploited for purposes of computer-based reasoning.
+Ontologists have developed a wide range of theories and methods to support the consistent representation of data and information using such classifications, known as "ontologies." In all such cases, when data are annotated using well-structured ontologies, they can be more easily retrieved, integrated, and compared—and more effectively used for computer-based reasoning.
 
-In biology and biomedicine, especially, ontologists have developed controlled vocabularies such as the Gene Ontology that are being used to describe the results of biological experiments in a consistent fashion that allows comparison of data pertaining to multiple species, diseases and biological systems. In government, administration and commerce ontologies are being used, similarly, to connect data across different departments (such as large government agencies) and to make these data accessible to standard software tools.
+In biology and biomedicine, for example, ontologists have developed controlled vocabularies such as the Gene Ontology to describe the results of biological experiments in a consistent way. This allows for comparison across species, diseases, and biological systems. In government, administration, and commerce, ontologies are also used to connect data across departments (such as large government agencies) and to make these data accessible to standard software tools.
 
 <div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
   <img 
