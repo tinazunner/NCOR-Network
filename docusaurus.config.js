@@ -281,14 +281,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-      announcementBar: {
-        id: 'wip_announcement',
-        content: 
-          '🚧 <strong>WORK IN PROGRESS:</strong> The NCOR Network website is currently under development. Some features and content may be incomplete. 🚧',
-        backgroundColor: '#FEF6E4', // Light gold background
-        textColor: '#9e7418',        // Gold text to match your theme
-        isCloseable: false,          // Make it persistent
-      },
+    
     }),
   stylesheets: [
     {
