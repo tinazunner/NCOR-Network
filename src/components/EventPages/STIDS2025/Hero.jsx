@@ -32,9 +32,8 @@ export default function Hero() {
           </svg>
         </div>
         <h1 className={styles.heroTitle}>
-          Semantic Technology for Intelligence, Defense, and Security (STIDS) 2025
+          Semantic Technology for Intelligence, Defense, and Security (STIDS) Conference 2025
         </h1>
-        <p className={styles.heroSubtitle}>STIDS Conference 2025</p>
         <div className={styles.heroDate}>November 17-18, 2025</div>
         <div className={styles.heroLocation}>
           George Mason University, Potomac Science Center<br />
