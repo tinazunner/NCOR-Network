@@ -29,4 +29,4 @@ The ABI (Agent Based Intelligence) project is a Python-based backend framework d
 
 - OBO Foundry : The Open Biological and Biomedical Ontologies Foundry
 - IOF Foundry : The Industrial Ontology Foundry 
-- DoD-IC Foundry: The Department of Defense and Intelligence Community Ontology Foundry
+- NSOF: The National Security Ontology Foundry
