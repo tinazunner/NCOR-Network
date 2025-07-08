@@ -213,6 +213,7 @@ Here is a list of courses Barry Smith have taught over the years:
 - [An Introduction to Ontology: From Aristotle to the Universal Core](http://ontology.buffalo.edu/smith/IntroOntology_Course.html) (2009)
 - [An Introduction to Biomedical Ontology](http://ontology.buffalo.edu/smith/BioOntology_Course.html) (2008)
 - [From Basic Formal Ontology to the Information Artifact Ontology](https://www.bioontology.org/wiki/From_BFO_to_IAO)
+- [Barry Smith's YouTube Channel](https://www.youtube.com/channel/UCDYw4LTZfK27Q0lJ8pxQC8Q)
 
 ----
 **Tutorials**
