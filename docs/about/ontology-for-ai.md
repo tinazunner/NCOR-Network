@@ -10,7 +10,7 @@ Ontologies provide a crucial foundation for AI systems by establishing standardi
 
 By embedding ontological structures into AI applications, we can ensure greater transparency, alignment with human values, and cross-cultural interoperability.
 
-### The current AI Renaissance: beyond the hype
+### The Current AI Renaissance: Beyond the Hype
 
 <div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
   <img 
@@ -39,7 +39,7 @@ The second wave in the 1980s-90s saw the rise of expert systems: programs that s
 
 Today's AI systems, while vastly more capable, face similar challenges of maintenance, updating, scaling at a different level of abstraction.
 
-### The Semantic Web: Ontologies Agents ahead of its time
+### The Semantic Web: Ontology and Agents Ahead of Their Time
 
 Tim Berners-Lee's seminal paper on the Semantic Web in 2001 outlined a vision that was revolutionary but premature: a web of data that could be processed by machines through standardized ontologies and intelligent agents. The paper described "ontology agents" that would negotiate meaning between systems and enable truly intelligent information processing.
 
