@@ -6,7 +6,7 @@ description: Frequently Asked Questions about NCOR and its projects
 
 ### What is NCOR?
 
-NCOR is a global non-profit organization dedicated to advancing the field of ontology throughout the world by, for example, promoting National Centers for Ontological Research in different countries around the world.
+The NCOR Network is dedicated to advancing the field of ontology throughout the world by, for example, promoting National Centers for Ontological Research in different countries around the world.
 
 ### What is the relationship between NCOR and CCO?
 
