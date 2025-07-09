@@ -1,26 +1,23 @@
 ---
 sidebar_position: 12
-title: Working Groups
+id: common-core
+title: Common Core Ontologies Working Groups
 description: Common Core Ontologies Working Groups
 ---
 
 # Common Core Ontologies Working Group
 
+## Common Core Ontologies 
+
 The Common Core Ontologies (CCO) were developed and promoted by [Ron Rudnicki](https://scholar.google.com/citations?hl=en&user=JLM7L2EAAAAJ&view_op=list_works&sortby=pubdate) and is comprised of 11 ontologies extending from Basic Formal Ontology that aim to represent and integrate taxonomies of generic classes and relations across all domains.
 
-## NCOR CCO WG
+## NCOR Common Core Ontologies Working Group
 
 The aim of the NCOR Common Core Ontologies Working Group (CCOWG) is to cultivate an understanding of, provide contributions to, and promote development of the Common Ontology (CCO) suite. The group is comprised of academics, students, and professionals with a common interest in CCO-based domain ontology engineering.
 
 The CCOWG is chaired by [Giacomo De Colle](https://www.linkedin.com/in/giacomodecolle/) and holds weekly hybrid meetings. Meetings regularly involve discussions of CCO-based projects, such as design pattern refinement, alignment with nearby open-source ontologies, and crafting criteria for what counts as a "mid-level" ontology or ontology suite. Please see the minutes from past meetings below for a better understanding of topics covered.
 
-If you would like to attend CCOWG meetings either in-person or remotely, contact Carter at: carterbe[at]buffalo.edu.
-
-## IEEE Ontology Standards WG
-
-The Common Core Ontologies have been submitted to the Institute of Electrical and Electronics Engineers (IEEE) as part of a standard for defining mid-level ontologies. This standard, [P3195](https://standards.ieee.org/ieee/3195/11025/) would establish the requirements for an ontology to be a mid-level ontology and defines several ontologies as mid-level ontologies, including CCO.
-
-This group works on getting P3195 to reach full approval status. If you would like to participate, contact the working group chair, James Schoening, james.schoening@ieee.org.
+If you would like to attend CCOWG meetings either in-person or remotely, contact Giacomo at: gdecolle[at]buffalo.edu.
 
 ## Minutes
 

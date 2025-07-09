@@ -31,6 +31,7 @@ const ApplicationSection = () => {
   const [avatarError, setAvatarError] = useState(false);
   
   const interestOptions = [
+    '101 Working Group',
     'Foundational Ontology',
     'Domain Ontologies',
     'Ontology for AI',

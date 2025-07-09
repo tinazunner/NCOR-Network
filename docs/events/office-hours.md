@@ -1,7 +1,7 @@
 ---
 id: office-hours
 title: Office Hours
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Office Hours
@@ -22,14 +22,3 @@ If you are interested in joining one or more office hours, please contact [John 
 In addition to the biweekly office hours, there is an associated Slack channel for the group where stakeholders may continue conversation with the BFO and CCO leads. As above, please contact [John Beverley](https://johnbeverley.com/) at johnbeve[@]buffalo.edu to be added to the BFO-CCO Office Hours Slack channel.
 
 As stakeholder questions are addressed, we will also establish an "FAQ" where stakeholders will be directed for vetted answers to commonly posed questions.
-
-## BFO and CCO Resources
-
-Genuine, robust, semantic mappings across ontologies are challenging to create and there are numerous resources the group has leveraged to make progress:
-
-* [BFO Homepage](https://basic-formal-ontology.org/)
-* [BFO GitHub Repository](https://github.com/BFO-ontology/BFO-2020)
-* [BFO Design Patterns](https://philarchive.org/archive/OTTBBF)
-* [CCO Homepage](https://www.ontologyrepository.com/)
-* [CCO GitHub Repository](https://github.com/CommonCoreOntology/CommonCoreOntologies)
-* [CCO Design Patterns](https://arxiv.org/pdf/2404.17758) 

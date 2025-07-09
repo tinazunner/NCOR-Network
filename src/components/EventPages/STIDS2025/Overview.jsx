@@ -7,29 +7,23 @@ export default function Overview() {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Conference Overview</h2>
         <div className={styles.card}>
-          <p>
-            STIDS 2025 serves as a premier forum for researchers and practitioners in semantic technology, 
-            intelligence, defense, and security. This year's conference continues our tradition of fostering 
-            innovative discussions and collaborations in these critical domains.
-          </p>
-          <p>
-            Join us for three days of:
-          </p>
-          <ul>
-            <li>Cutting-edge research presentations</li>
-            <li>Expert keynote speakers</li>
-            <li>Interactive panel discussions</li>
-            <li>Networking opportunities</li>
-            <li>Hands-on workshops</li>
-          </ul>
-          <p>
-            The conference will feature both unclassified and classified sessions, bringing together 
-            academic researchers, industry professionals, and government practitioners to address 
-            current challenges and future opportunities in semantic technology applications for 
-            intelligence, defense, and security.
-          </p>
+          <p>The Thirteenth International Conference on Semantic Technology for Intelligence,
+Defense, and Security (STIDS 2025) will be held on the 17th through the 19th of
+November 2025. November 19th, a classified session will be held on NGA's campus.</p>
+
+<p>STIDS provides a forum for academia, government, and industry to share the latest
+applied research, development, and application of semantic technology for defense,
+intelligence, and security applications. Semantic technology is a fundamental enabler of
+greater flexibility, precision, timeliness, and automation of analysis and response to
+rapidly evolving threats.</p>
+
+<p>National security increasingly hinges on our ability to integrate artificial intelligence with
+semantic technologies, knowledge graphs, and data fabrics. The STIDS 2025 theme
+centers on applying semantic technologies to support trustworthy and explainable
+reasoning across data ecosystems.</p>
           <div style={{ marginTop: '2rem' }}>
-            <strong>Classified Session:</strong> October 23, 2025 (Separate registration required)
+            <ul><strong>Unclassified Session:</strong> November 17-18, 2025</ul>
+            <ul><strong>Classified Session:</strong> November 19, 2025 (by invite)</ul>
           </div>
         </div>
       </div>

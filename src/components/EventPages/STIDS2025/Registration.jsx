@@ -16,7 +16,7 @@ export default function Registration() {
     },
     {
       type: 'Government',
-      price: 320,
+      price: 0,
       features: [
         'Full conference access',
         'Conference materials',
@@ -97,26 +97,6 @@ export default function Registration() {
               </a>
             </div>
           ))}
-        </div>
-
-        <div style={{ 
-          marginTop: '3rem', 
-          textAlign: 'center',
-          padding: '2rem',
-          background: 'var(--ifm-background-surface-color)',
-          borderRadius: '8px'
-        }}>
-          <h3>Classified Session Registration</h3>
-          <p>
-            For registration to the classified session on October 23, 2025, please contact your 
-            organization's security officer or email us directly.
-          </p>
-          <a 
-            href="mailto:classified@stids2025.com" 
-            className={`${styles.button} ${styles.buttonSecondary}`}
-          >
-            Contact for Classified Session
-          </a>
         </div>
       </div>
     </div>

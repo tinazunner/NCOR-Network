@@ -61,12 +61,12 @@ NCOR works with leading researchers, practitioners, and educators in the field o
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image" style={{paddingTop: '20px'}}>
-        <img src="https://www.buffalo.edu/content/cas/philosophy/grad-study/grad_directory/jcr:content/par/image_1660011936.img.140.140.z.jpg/1649966366698.z.jpg" alt="Carter-Beau Benson" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
+        <img src="https://ubwp.buffalo.edu/ncor/wp-content/uploads/sites/40/2015/10/J-Neil-Otte-2.3.17-225x300.jpg" alt="J. Neil Otte" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
       </div>
       <div className="card__body text--center">
-        <h3><a href="//www.linkedin.com/in/carter-benson-60923b270/">Carter-Beau Benson</a></h3>
-        <p>Ontology Research Assistant <br/> Department of Philosophy <br/> University at Buffalo</p>
-        <p><em>Research in Bioethics, Pluralism, and Applied Ontology</em></p>
+        <h3><a href="https://www.jneilotte.com/">J. Neil Otte</a></h3>
+        <p>Senior ontologist <br/> Johns Hopkins University <br/> Applied Physics Lab</p>
+        <p><em>Research in Evidence Ontologies for the Social Sciences, Experimental Methods, Ethics, Moral Psychology, and Experimental Philosophy</em></p>
       </div>
     </div>
   </div>
@@ -74,12 +74,12 @@ NCOR works with leading researchers, practitioners, and educators in the field o
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image" style={{paddingTop: '20px'}}>
-        <img src="https://raw.githubusercontent.com/johnbeve/NCOR-Test/main/docs/assets/photos/Delaney.jpg" alt="Delaney McNulty" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
+        <img src="https://ubwp.buffalo.edu/ncor/wp-content/uploads/sites/40/2015/10/mark_jensen_head_shot_sm-e1486422487967-300x279.jpg" alt="Mark Jensen" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
       </div>
       <div className="card__body text--center">
-        <h3><a href="//www.linkedin.com/in/delaney-mcnulty-20541918a/">Delaney McNulty</a></h3>
-        <p>Department of Indigenous Studies</p>
-        <p><em>Research in Philosophy of Science, Cognitive Science, Philosophy of Psychology, and Applied Ontology</em></p>
+        <h3><a href="//www.linkedin.com/in/mark-jensen-022a98103/">Mark Jensen</a></h3>
+        <p>Senior Data Scientist <br/> Customs and Border Protection </p> 
+        <p><em>Research in development and implementation of ontologies for military and biomedical applications; mental health, psychiatry, and neurology</em></p>
       </div>
     </div>
   </div>
@@ -87,55 +87,13 @@ NCOR works with leading researchers, practitioners, and educators in the field o
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__image" style={{paddingTop: '20px'}}>
-        <img src="https://www.buffalo.edu/content/cas/philosophy/grad-study/grad_directory/jcr:content/par/image_1660011936_cop_568322255.img.280.280.z.q65.jpg/1649966708999.jpg" alt="Gloria Sanso" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
+        <img src="https://ubwp.buffalo.edu/ncor/wp-content/uploads/sites/40/2021/09/CoxHeadshot-scaled.jpg" alt="Alexander P. Cox" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
       </div>
       <div className="card__body text--center">
-        <h3><a href="https://labont.it/people/gloria-sanso/">Gloria Sanso</a></h3>
-        <p>PhD Candidate <br/> Department of Philosophy University at Buffalo</p>
-        <p><em>Research in Social Metaphysics, Philosophy of AI, and Applied Ontology</em></p>
+        <h3><a href="https://www.researchgate.net/scientific-contributions/Alexander-P-Cox-2039450745">Alexander P. Cox</a></h3>
+        Principal ontologist <br/> CUBRC, Inc.
+        <p><em>Research in Applied Ontology, Semantic Web for Military Intelligence, Bioinformatics, and Ontologies of Space and Neurology</em></p>
       </div>
     </div>
   </div>
 </div>
-
-<div className="row">
-  <div className="col col--4 margin-bottom--lg">
-    <div className="card">
-      <div className="card__image" style={{paddingTop: '20px'}}>
-        <img src="https://raw.githubusercontent.com/johnbeve/NCOR-Test/main/docs/assets/photos/franda.jpeg" alt="Francesco Franda" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
-      </div>
-      <div className="card__body text--center">
-        <h3><a href="https://www.unine.ch/philo/en/home/collaborateurs-trices/francesco-franda-post-doc.html">Francesco Franda</a></h3>
-        <p>SNSF Postdoctoral Researcher <br/> University of Neuchâtel, Switzerland</p>
-        <p><em>Research in Social Ontology, Metaphysics, Philosophy of the Social Sciences, and Applied Ontology</em></p>
-      </div>
-    </div>
-  </div>
-
-  <div className="col col--4 margin-bottom--lg">
-    <div className="card">
-      <div className="card__image" style={{paddingTop: '20px'}}>
-        <img src="https://raw.githubusercontent.com/johnbeve/NCOR-Test/main/docs/assets/photos/daniel.png" alt="Daniel Novotny" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
-      </div>
-      <div className="card__body text--center">
-        <h3><a href="https://www.unine.ch/philo/en/home/collaborateurs-trices/francesco-franda-post-doc.html">Daniel Novotny</a></h3>
-        <p>Assistant Professor <br/> University of South Bohemia</p>
-        <p><em>Research in Applied Philosophy (Ontology, Ethics) and History of Philosophy</em></p>
-      </div>
-    </div>
-  </div>
-
-  <div className="col col--4 margin-bottom--lg">
-    <div className="card">
-      <div className="card__image" style={{paddingTop: '20px'}}>
-        <img src="https://raw.githubusercontent.com/johnbeve/NCOR-Test/main/docs/assets/photos/HectorG.JPG" alt="Hector Guzman-Orozco" style={{borderRadius: '50%', width: '100px', height: '100px', margin: '0 auto', display: 'block', border: '2px solid #9e7418'}} />
-      </div>
-      <div className="card__body text--center">
-        <h3><a href="https://www.linkedin.com/in/hector-guzman-orozco-b46967110/">Hector Guzman-Orozco</a></h3>
-        <p>NCOR Head (Riverside division)<br/>
-        <a href="https://www.msjc.edu/philosophy/">Assistant Professor of Philosophy at Mt. San Jacinto College</a></p>
-        <p><em>Research in Applied Ontology and Philosophy of Language</em></p>
-      </div>
-    </div>
-  </div>
-</div> 

@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 export default function CallForPapers() {
   const topics = [
     {
-      title: 'Ontology development best practices',
+      title: 'Semantic technologies for federated and distributed data ecosystems',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
@@ -12,7 +12,7 @@ export default function CallForPapers() {
       )
     },
     {
-      title: 'DevOps strategies for real-time workflows',
+      title: 'Symbolic AI for intelligence and defense',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 12a9 9 0 11-9-9c2.52 0 4.85.83 6.72 2.24"/>
@@ -21,7 +21,7 @@ export default function CallForPapers() {
       )
     },
     {
-      title: 'Empirical evaluations of semantic web technologies',
+      title: 'Integration of semantic technologies with machine learning and advanced analytics',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
@@ -30,7 +30,7 @@ export default function CallForPapers() {
       )
     },
     {
-      title: 'Command and Control (C2) and Situation Awareness (SA)',
+      title: 'Benchmarks and metrics for evaluating semantic interoperability',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="3"/>
@@ -39,7 +39,7 @@ export default function CallForPapers() {
       )
     },
     {
-      title: 'Cyberspace: defense, exploitation, and counter-attack',
+      title: 'Trustworthy AI and explainable reasoning in national security contexts',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -47,7 +47,7 @@ export default function CallForPapers() {
       )
     },
     {
-      title: 'Large-Language or Foundational Models',
+      title: 'Semantic technologies for data or ontology governance, lineage, and accountability',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
@@ -55,7 +55,7 @@ export default function CallForPapers() {
       )
     },
     {
-      title: 'Intelligence collection, analysis, and dissemination',
+      title: 'Use cases demonstrating operational impact of semantic technologies in defense and security',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
@@ -64,7 +64,7 @@ export default function CallForPapers() {
       )
     },
     {
-      title: 'Planning: representation of and reasoning over plans and processes',
+      title: 'Demonstrations of applications of semantic technologies in support of national security missions',
       icon: (
         <svg className={styles.topicIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/>
@@ -105,20 +105,24 @@ export default function CallForPapers() {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Call for Papers</h2>
         <p className={styles.sectionSubtitle}>
-          Thirteenth International Conference on Semantic Technology for Intelligence, Defense, and Security
+          Thirteenth International Conference on Semantic Technology for Intelligence, Defense, and Security (STIDS) 2025
         </p>
         
         <div className={styles.card}>
           <h3>Submission Guidelines</h3>
-          <p>
-            We welcome submissions of technical papers and extended abstracts. Each submission will be evaluated 
-            by at least two members of the Program Committee based on relevance, originality, significance, 
-            and clarity.
+          <p>We invite submissions of original, unpublished research and application papers that
+address innovative solutions, architectures, and methodologies integrating semantic
+technologies with advanced computing in support of national security objectives. We
+particularly welcome papers that advance the state of the art in semantic interoperability
+and machine reasoning for data-intensive systems, supporting enhanced situational
+awareness, predictive analytics, and decision-making capabilities in complex,
+distributed environments.
           </p>
           <ul>
-            <li>Technical papers must be 6-8 pages in length</li>
-            <li>Extended abstracts limited to 3 pages</li>
-            <li>Must follow IEEE conference proceedings format (US Letter)</li>
+            <li>Extended abstracts must be no more than 3 pages</li>
+            <li>Short papers must be between 5-9 pages</li>
+            <li>Long papers must be between 10-14 pages</li>
+            <li>Must follow CEUR-WS conference proceedings format</li>
             <li>Papers must be original and not under review elsewhere</li>
             <li>At least one author must register and present at the conference</li>
           </ul>
@@ -142,24 +146,19 @@ export default function CallForPapers() {
           </div>
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-          <a 
-            href="#" 
-            className={`${styles.button} ${styles.buttonPrimary}`}
-            style={{ marginRight: '1rem' }}
-          >
-            Submit Paper
-          </a>
-          <a 
-  href="/documents/CEUR-Template-Bundle.zip" 
-  download
-  className={`${styles.button} ${styles.buttonSecondary}`}
->
-  Download Template
-</a>
-
-        </div>
-      </div>
-    </div>
-  );
-} 
+  <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+  <a 
+    href="https://easychair.org/conferences/?conf=stids2025"
+    className={`${styles.button} ${styles.buttonPrimary}`}
+    style={{ marginRight: '1rem' }}
+  >
+    Submit Paper
+  </a>
+  <a 
+    href="/documents/CEUR-Template-Bundle.zip" 
+    download
+    className={`${styles.button} ${styles.buttonSecondary}`}
+  >
+    Download Template
+  </a>
+</div>
