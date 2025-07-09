@@ -4,8 +4,7 @@ title: John Beverley's Courses
 ---
 
 Check out John Beverley's courses [here](https://www.johnbeverley.com/). 
-You can also find his video lectures on [YouTube](https://www.youtube.com/@johnbeve).
-Or check out the individual courses below:
+Explore the individual courses below:
 
 ## 2025
 - [Ontology Design Patterns](https://github.com/Applied-Ontology-Education/design-patterns) *Spring 2025*
