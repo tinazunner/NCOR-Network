@@ -21,4 +21,5 @@ Below is a list of resources that may be useful for engaging with NCOR and its p
 * [How to Handle Data about What Does Not Exist](https://www.youtube.com/watch?v=ai4YdLiCGNM)
 * [Introduction to Ontological Engineering](https://www.youtube.com/@BarrySmithOntology)
 * [Ontology Design Patterns](https://ontologydesignpatterns.org/)
+* [Barry Smith's YouTube Channel](https://www.youtube.com/channel/UCDYw4LTZfK27Q0lJ8pxQC8Q)
 
