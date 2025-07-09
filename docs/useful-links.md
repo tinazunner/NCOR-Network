@@ -22,4 +22,4 @@ Below is a list of resources that may be useful for engaging with NCOR and its p
 * [Introduction to Ontological Engineering](https://www.youtube.com/@BarrySmithOntology)
 * [Ontology Design Patterns](https://ontologydesignpatterns.org/)
 * [Barry Smith's YouTube Channel](https://www.youtube.com/channel/UCDYw4LTZfK27Q0lJ8pxQC8Q)
-
+* [John Beverley's YouTube Channel](https://www.youtube.com/@johnbeve)
