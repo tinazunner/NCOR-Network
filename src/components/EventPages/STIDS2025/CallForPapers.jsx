@@ -151,11 +151,13 @@ export default function CallForPapers() {
             Submit Paper
           </a>
           <a 
-            href="#" 
-            className={`${styles.button} ${styles.buttonSecondary}`}
-          >
-            Download Template
-          </a>
+  href="/documents/CEUR-Template-Bundle.zip" 
+  download
+  className={`${styles.button} ${styles.buttonSecondary}`}
+>
+  Download Template
+</a>
+
         </div>
       </div>
     </div>
