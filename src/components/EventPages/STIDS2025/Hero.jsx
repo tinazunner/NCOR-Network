@@ -22,6 +22,7 @@ export default function Hero() {
       >
         <source src="/videos/stids-landing-hero-video-bg.mp4" type="video/mp4" />
       </video>
+      <div className={styles.heroOverlay}></div>
       <h1 className={styles.heroTitle}>
         Semantic Technology for Intelligence, Defense, and Security (STIDS) 2025
       </h1>
