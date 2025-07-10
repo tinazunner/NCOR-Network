@@ -119,9 +119,9 @@ awareness, predictive analytics, and decision-making capabilities in complex,
 distributed environments.
           </p>
           <ul>
-            <li>Extended abstracts must be no more than 3 pages</li>
-            <li>Short papers must be between 5-9 pages</li>
-            <li>Long papers must be between 10-14 pages</li>
+            <li>Extended abstracts must be <b>no more than 3 pages</b></li>
+            <li>Short papers must be between <b>5-9 pages</b></li>
+            <li>Long papers must be between <b>10-14 pages</b></li>
             <li>Must follow CEUR-WS conference proceedings format</li>
             <li>Papers must be original and not under review elsewhere</li>
             <li>At least one author must register and present at the conference</li>

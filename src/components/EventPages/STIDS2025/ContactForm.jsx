@@ -98,10 +98,6 @@ export default function ContactForm() {
           color: 'var(--ifm-color-emphasis-700)'
         }}>
           <p>
-            <strong>Email:</strong>{' '}
-            <a href="mailto:johnbeve@buffalo.edu">johnbeve@buffalo.edu</a>
-          </p>
-          <p>
             <strong>Location:</strong>{' '}
             George Mason University, Potomac Science Center<br />
             650 Mason Ferry Avenue, Woodbridge VA 22191
