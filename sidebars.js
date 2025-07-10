@@ -35,11 +35,15 @@ const sidebars = {
       label: 'Research',
       items: ['research/areas', 'research/projects', 'research/publications'],
     },
-    {
-      type: 'category',
-      label: 'Affiliates',
-      items: ['affiliates/individuals', 'affiliates/organizations', 'affiliates/institutions'],
-    },
+{
+  type: 'category',
+  label: 'Affiliates',
+  items: ['affiliates/individuals', {
+    type: 'doc',
+    id: 'affiliates/organizations',
+    label: 'Organizational & Institutional Affiliates',
+  }],
+},
     {
       type: 'doc',
       id: 'faq',
