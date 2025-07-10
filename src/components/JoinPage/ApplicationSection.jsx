@@ -31,16 +31,15 @@ const ApplicationSection = () => {
   const [avatarError, setAvatarError] = useState(false);
   
   const interestOptions = [
-    '101 Working Group',
-    'Foundational Ontology',
-    'Domain Ontologies',
-    'Ontology for AI',
-    'Data Integration',
-    'Semantic Interoperability',
-    'Ontology Engineering',
-    'Education & Training',
-    'Research Collaboration',
-  ];
+  '101 Working Group',
+  'Foundational Ontology',
+  'Ontology for AI',
+  'Ontology Engineering',
+  'Education & Training',
+  'Research Collaboration',
+  'Semantic Mapping Working Group',
+  'Common Core Ontologies Working Group'
+];
   
   const roleOptions = [
     'Professor/Academic Researcher',
