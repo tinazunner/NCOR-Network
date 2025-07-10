@@ -6,7 +6,7 @@ export default function Hero() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; 
+      videoRef.current.playbackRate = 0.5;
     }
   }, []);
 
@@ -22,6 +22,7 @@ export default function Hero() {
       >
         <source src="/videos/stids-landing-hero-video-bg.mp4" type="video/mp4" />
       </video>
+
       <div className={styles.heroOverlay} />
       <div className={`${styles.container} ${styles.heroContent}`}>
         <div className={styles.warningBanner}>
@@ -31,9 +32,11 @@ export default function Hero() {
             <line x1="12" y1="17" x2="12.01" y2="17"/>
           </svg>
         </div>
+
         <h1 className={styles.heroTitle}>
-          Semantic Technology for Intelligence, Defense, and Security (STIDS) Conference 2025
+          Semantic Technology for Intelligence, Defense, and Security Conference (STIDS) 2025
         </h1>
+
         <div className={styles.heroDate}>November 17-18, 2025</div>
         <div className={styles.heroLocation}>
           George Mason University, Potomac Science Center<br />
