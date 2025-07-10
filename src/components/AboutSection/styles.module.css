@@ -156,3 +156,24 @@
     font-size: 1.2rem;
   }
 } 
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.buttonPrimary {
+  background-color: #9e7418;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.buttonPrimary:hover {
+  background-color: #b88b1d;
+}
