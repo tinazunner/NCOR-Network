@@ -4,17 +4,6 @@ import styles from './styles.module.css';
 export default function Registration() {
   const pricingOptions = [
     {
-      type: 'Industry',
-      price: 400,
-      features: [
-        'Full conference access',
-        'Conference materials',
-        'Networking events',
-        'Lunch and refreshments',
-        'Access to presentations'
-      ]
-    },
-    {
       type: 'Government',
       price: 0,
       features: [
@@ -26,8 +15,19 @@ export default function Registration() {
       ]
     },
     {
+      type: 'Industry',
+      price: 480,
+      features: [
+        'Full conference access',
+        'Conference materials',
+        'Networking events',
+        'Lunch and refreshments',
+        'Access to presentations'
+      ]
+    },
+    {
       type: 'Academic',
-      price: 280,
+      price: 350,
       features: [
         'Full conference access',
         'Conference materials',
@@ -38,7 +38,7 @@ export default function Registration() {
     },
     {
       type: 'Student',
-      price: 150,
+      price: 215,
       features: [
         'Full conference access',
         'Conference materials',
@@ -89,7 +89,7 @@ export default function Registration() {
                 ))}
               </ul>
               <a 
-                href="#" 
+                href="https://www.eventbrite.com/e/semantic-technology-for-intelligence-defense-and-security-2025-tickets-1479068025279?aff=oddtdtcreator" 
                 className={`${styles.button} ${styles.buttonPrimary}`}
                 style={{ width: '100%' }}
               >
