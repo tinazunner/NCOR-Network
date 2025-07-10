@@ -137,3 +137,29 @@ Each records below includes the publication title, authors, year, a brief one-se
 - **ICBO 2012 Proceedings** (Alan Ruttenberg, Mélanie Courtot, Amar Das, eds., 2012) – Ruttenberg co-edited the published proceedings of the International Conference on Biomedical Ontology 2012 (CEUR Workshop Proceedings 897). This volume contains many short papers and posters (including some of Ruttenberg's co-authored abstracts on adverse event ontology and vaccine ontology) and serves as a snapshot of ontology research circa 2012. **URL:** http://ceur-ws.org/Vol-897/
 
 *(Allen "Alan" Ruttenberg is an ontologist known for his work on the Semantic Web in life sciences and for co-founding the OBO Foundry and OBI. Many of his publications above are collaborative efforts setting standards for ontology development and data integration in biomedicine.)*
+
+### By Werner Ceusters
+
+- **Applying realist principles to the evolution of SNOMED CT** (Werner Ceusters, 2009) – A critical analysis of how SNOMED CT can align with ontological realism to improve terminological clarity and consistency. **URL:** https://pubmed.ncbi.nlm.nih.gov/19390122/
+
+- **Ontological realism: A methodology for coordinated evolution of scientific ontologies** (Barry Smith & Werner Ceusters, 2010) – Describes the principles of ontological realism and their application in collaborative ontology development. **URL:** https://pubmed.ncbi.nlm.nih.gov/20640265/
+
+- **Towards a realistic representation of disorders** (Werner Ceusters & Barry Smith, 2010) – Proposes a realist framework for defining and classifying disorders in clinical ontologies. **URL:** https://pubmed.ncbi.nlm.nih.gov/20198847/
+
+- **How to track absolutely everything** (Werner Ceusters, 2005) – Introduces Referent Tracking, a methodology to manage identity and reference in electronic health records. **URL:** https://pubmed.ncbi.nlm.nih.gov/16185684/
+
+- **Representing dispositions in formal ontologies** (Werner Ceusters & Barry Smith, 2010) – Explores the modeling of dispositional properties in biomedical ontology frameworks. **URL:** https://pubmed.ncbi.nlm.nih.gov/20640255/
+
+- **Ontological evaluation and improvement of the NCI Thesaurus** (Werner Ceusters, Barry Smith, et al., 2005) – Evaluates and suggests improvements to the National Cancer Institute Thesaurus based on ontological principles. **URL:** https://pubmed.ncbi.nlm.nih.gov/16185680/
+
+- **An ontological analysis of the NCI Thesaurus** (Barry Smith, Werner Ceusters, et al., 2005) – Analyzes the structure of NCI Thesaurus to enhance its coherence and ontological grounding. **URL:** https://pubmed.ncbi.nlm.nih.gov/16185679/
+
+- **Referent Tracking: The problem of negative findings** (Werner Ceusters & Barry Smith, 2008) – Discusses challenges in documenting clinically relevant negative information using referent tracking. **URL:** https://pubmed.ncbi.nlm.nih.gov/18487840/
+
+- **Mental disease and the mind–brain problem** (Werner Ceusters & Barry Smith, 2010) – Offers an ontological framework for understanding mental disorders within the context of the mind–brain relationship. **URL:** https://pubmed.ncbi.nlm.nih.gov/20640262/
+
+- **A realist interpretation of the Gene Ontology** (Barry Smith & Werner Ceusters, 2004) – Presents a foundational critique and refinement of the Gene Ontology from the standpoint of ontological realism. **URL:** https://pubmed.ncbi.nlm.nih.gov/15130831/
+
+*(Werner Ceusters, MD, is Professor and Division Chief of Biomedical Ontology in the Department of Biomedical Informatics, and Professor of Psychiatry at the Jacobs School of Medicine and Biomedical Sciences, SUNY at Buffalo. He directs the Ontology Research Group at the NY State Center of Excellence in Bioinformatics and Life Sciences. His research focuses on ontological realism, referent tracking, and logic-based information integration.)*
+
+
