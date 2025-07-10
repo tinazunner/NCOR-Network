@@ -80,6 +80,54 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 6rem 2rem;
+  overflow: hidden;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Dark overlay between video and text */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  z-index: 1;
+}
+
+/* Ensure text and buttons are above overlay */
+.heroTitle,
+.heroSubtitle,
+.heroDate,
+.heroLocation,
+.button,
+.buttonPrimary {
+  position: relative;
+  z-index: 2;
+}
+
+
 .learnMoreButton:hover {
   background-color: transparent !important;
   color: #b88b1d !important;
