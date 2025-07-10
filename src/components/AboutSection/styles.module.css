@@ -127,6 +127,10 @@
   z-index: 2;
 }
 
+.heroTitle {
+  border: 2px solid red !important;
+}
+
 
 .learnMoreButton:hover {
   background-color: transparent !important;
