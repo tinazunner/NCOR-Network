@@ -114,11 +114,6 @@ NCOR partners with organizations across sectors to advance the development and i
     </div>
   </div>
 </div> 
----
-id: institutions
-title: Institutional Affiliates
-sidebar_position: 3
----
 
 # Institutional Affiliates
 
