@@ -110,6 +110,10 @@ const config = {
                 label: 'Ontology for AI',
                 to: '/docs/about/ontology-for-ai',
               },
+              {
+                label: 'Success Stories',
+                to: '/docs/about/success-stories',
+              },
             ],
           },
           {

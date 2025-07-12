@@ -146,22 +146,19 @@ distributed environments.
           </div>
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-          <a 
-            href="https://easychair.org/conferences/?conf=stids2025"
-            className={`${styles.button} ${styles.buttonPrimary}`}
-            style={{ marginRight: '1rem' }}
-          >
-            Submit Paper
-          </a>
-          <a 
-            href="https://ceur-ws.org/HOWTOSUBMIT.html" 
-            className={`${styles.button} ${styles.buttonSecondary}`}
-          >
-            Download Template
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-} 
+  <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+  <a 
+    href="https://easychair.org/conferences/?conf=stids2025"
+    className={`${styles.button} ${styles.buttonPrimary}`}
+    style={{ marginRight: '1rem' }}
+  >
+    Submit Paper
+  </a>
+  <a 
+    href="/documents/CEUR-Template-Bundle.zip" 
+    download
+    className={`${styles.button} ${styles.buttonSecondary}`}
+  >
+    Download Template
+  </a>
+</div>
