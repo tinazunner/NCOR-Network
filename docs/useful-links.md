@@ -8,8 +8,8 @@ Below is a list of resources that may be useful for engaging with NCOR and its p
 
 ### NCOR Resources
 * [NCOR Network Website](https://ncor.network)
-* [NCOR at the University at Buffalo](https://www.buffalo.edu/cas/philosophy/ontology.html)
 * [NCOR Brazil](https://ontology-br.com.br/about/)
+  
 
 ### Ontology Projects
 * [Basic Formal Ontology (BFO)](https://basic-formal-ontology.org/)
