@@ -142,7 +142,7 @@ const config = {
             items: [
               {
                 label: 'Ontology 101',
-                to: '/wiki/ontology-101',
+                to: '/wiki/main-page',
               },
               {
                 label: 'Courses',
