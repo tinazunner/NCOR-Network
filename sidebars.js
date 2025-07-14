@@ -23,7 +23,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'About',
-      items: ['about/mission', 'about/what-is-ontology', 'about/ontology-for-ai'],
+      items: ['about/mission', 'about/what-is-ontology', 'about/ontology-for-ai', 'about/success-stories'],
     },
     {
       type: 'category',
