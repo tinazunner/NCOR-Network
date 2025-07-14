@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 const PeopleList = [
+  // Leadership
   {
     name: 'Dr. Barry Smith',
     title: 'Director of NCOR',
@@ -11,6 +12,7 @@ const PeopleList = [
     image: '/img/people/barry_smith.jpeg',
     affiliation: 'University at Buffalo',
     profileLink: 'https://www.linkedin.com/in/barry-smith-ontology/',
+    group: 'Leadership',
   },
   {
     name: 'Dr. John Beverley',
@@ -19,14 +21,27 @@ const PeopleList = [
     image: '/img/people/john_beverley.jpeg',
     affiliation: 'University at Buffalo',
     profileLink: 'https://www.linkedin.com/in/john-beverley-869445a0/',
+    group: 'Leadership',
   },
+  {
+    name: 'Alan Ruttenberg',
+    title: 'Ontologist, OBO Foundry',
+    initials: 'AR',
+    image: 'https://ubwp.buffalo.edu/ncor/wp-content/uploads/sites/40/2015/10/Alan-Ruttenberg-300x225.jpg',
+    affiliation: 'University at Buffalo',
+    profileLink: 'https://creativecommons.org/about/program-areas/open-science',
+    group: 'Leadership',
+  },
+
+  // Core Contributors
   {
     name: 'Mark Jensen',
     title: 'Data Scientist',
-    initials: 'MB',
+    initials: 'MJ',
     image: '/img/people/mark_jensen.jpeg',
     affiliation: 'U.S. Customs and Border Protection',
     profileLink: 'https://www.linkedin.com/in/mark-jensen-022a98103/',
+    group: 'Core Contributors',
   },
   {
     name: 'J. Neil Otte',
@@ -35,6 +50,7 @@ const PeopleList = [
     image: '/img/people/neil_otte.jpeg',
     affiliation: 'Johns Hopkins University Applied Physics Laboratory',
     profileLink: 'https://www.linkedin.com/in/j-neil-otte-56286211a/',
+    group: 'Core Contributors',
   },
 ];
 
@@ -73,11 +89,16 @@ export default function PeopleSection() {
           </p>
         </div>
         
-        <div className={styles.peopleGrid}>
-          {PeopleList.map((props, idx) => (
-            <PersonCard key={idx} {...props} />
-          ))}
-        </div>
+  {['Leadership', 'Core Contributors'].map((group) => (
+  <div key={group} className={styles.peopleGroup}>
+    <h3 className={styles.groupHeading}>{group}</h3>
+    <div className={styles.peopleGrid}>
+      {PeopleList.filter((person) => person.group === group).map((props, idx) => (
+        <PersonCard key={`${group}-${idx}`} {...props} />
+      ))}
+    </div>
+  </div>
+))}
         
         <div className={styles.joinSection}>
           <div className={styles.joinContent}>
