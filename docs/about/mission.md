@@ -33,3 +33,16 @@ NCOR has been involved in various initiatives, including the development of the 
 
 Through these efforts, NCOR has established itself as a leading center in the field of applied ontology, contributing to the development of logically coherent data classification systems, collaboration among researchers and practitioners in various domains, and the development of ontologies to build trustworthy AI systems.
 
+## NCOR as a Global Network
+
+NCOR US is one of several organizations within the broader NCOR Network, which also includes groups such as NCOR Brazil.
+
+Although NCOR was founded in the United States, the NCOR Network has since evolved into an international consortium, with NCOR US continuing to play a central coordinating role. The same leadership team manages both NCOR US and the NCOR Network.
+
+As part of its expanding mission, the NCOR Network facilitates the development and integration of ontology-based initiatives, including:
+
+- the Open Biological and Biomedical Ontologies (OBO) Foundry,  
+- the Industrial Ontologies Foundry (IOF), and  
+- the emerging National Security Ontologies Foundry.
+
+These efforts reflect NCOR’s commitment to supporting a global community of ontologists working toward interoperable, high-quality semantic infrastructure.
