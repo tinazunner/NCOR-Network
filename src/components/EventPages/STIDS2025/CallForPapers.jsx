@@ -159,6 +159,10 @@ distributed environments.
     download
     className={`${styles.button} ${styles.buttonSecondary}`}
   >
-    Download Template
-  </a>
-</div>
+            Download Template
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
