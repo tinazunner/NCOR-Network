@@ -10,7 +10,8 @@ export default function Hero() {
     }
   }, []);
 
-  return (
+return (
+  <>
     <div className={styles.hero}>
       <video
         ref={videoRef}
@@ -27,7 +28,7 @@ export default function Hero() {
         Semantic Technology for Intelligence, Defense, and Security (STIDS) 2025
       </h1>
       <p className={styles.heroSubtitle}>STIDS Conference 2025</p>
-      <div className={styles.heroDate}>November 17-18, 2025</div>
+      <div className={styles.heroDate}>November 17–18, 2025</div>
       <div className={styles.heroLocation}>
         George Mason University, Potomac Science Center<br />
         650 Mason Ferry Avenue, Woodbridge VA 22191
@@ -43,5 +44,5 @@ export default function Hero() {
         </a>
       </div>
     </div>
-  );
-}
+  </>
+);
