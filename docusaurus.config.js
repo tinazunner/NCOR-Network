@@ -239,8 +239,8 @@ const config = {
                 to: '/docs/get-started',
               },
               {
-                label: 'Tools',
-                to: '/docs/events/useful-links',
+                label: 'Useful Links',
+                to: '/docs/useful-links',
               },
               {
                 label: 'GitHub',
