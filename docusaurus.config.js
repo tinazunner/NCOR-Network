@@ -1,3 +1,4 @@
+// Trigger rebuild to deploy CEUR template ZIP
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
