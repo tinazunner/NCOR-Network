@@ -154,8 +154,8 @@ distributed environments.
   >
     Submit Paper
   </a>
-  <a 
-    href="/documents/CEUR-Template-Bundle.zip" 
+    <a 
+  href="/documents/CEUR-Template-Bundle-2.zip" 
     download
     className={`${styles.button} ${styles.buttonSecondary}`}
   >
