@@ -1,11 +1,13 @@
----
-id: main-page
+
+id: wiki/main-page
 title: Main Page
 ---
 
+==> ⚠️ Test edit: This is a test line to check local rendering.
+
 The goal of the [National Center for Ontological Research](https://ubwp.buffalo.edu/ncor/) is to advance ontological investigation within the United States. NCOR serves as a vehicle to coordinate, to enhance, to publicize, and to seek funding for ontological research activities. It lays a special focus on ontology training and on the establishment of tools and measures for quality assurance of ontologies. NCOR provides ontology services to multiple organizations, including the US Department of Defense.
 
-  1. Events 
+  1. Events
 
 See **[here](http://ncorwiki.buffalo.edu/index.php/Newsevents)**
 

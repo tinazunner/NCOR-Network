@@ -940,4 +940,57 @@ div[class^='announcementBar_'] {
     text-align: center;
     padding: 1.5rem;
   }
+}/* Wikipedia-style page tweaks */
+.markdown {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  color: #202122;
 }
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  font-weight: bold;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 0.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.markdown a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 2em;
+}
+
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.markdown table,
+.markdown th,
+.markdown td {
+  border: 1px solid #a2a9b1;
+}
+
+.markdown th,
+.markdown td {
+  padding: 0.5em;
+  text-align: left;
+}
+

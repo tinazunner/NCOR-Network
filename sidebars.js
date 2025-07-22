@@ -15,7 +15,12 @@
  @type {any} SidebarsConfig
  */
 const sidebars = {
-  docsSidebar: [
+  docsSidebar: [    {
+      type: 'doc',
+      id: 'wiki/main-page',
+      label: 'Main Page',
+    },
+
     {
       type: 'doc',
       id: 'get-started',
