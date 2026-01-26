@@ -19,39 +19,51 @@ export default function FeaturedVideosSection() {
   const [loading, setLoading] = useState(true);
 
   // Initial video data with URLs
-  const initialVideos = [
+   const initialVideos = [
     {
       id: 1,
-      videoUrl: 'https://www.youtube.com/watch?v=RWpWxpGMjiU&t=3s',
-      // Optional fallback data if API fails
+      videoUrl: 'https://www.youtube.com/watch?v=VH9uBxLJx30',
+      fallbackTitle: 'How to Do Things with Ontologies',
+      fallbackPresenter: 'John Beverley',
+      fallbackDate: 'October 4, 2024'
+    },
+    {
+      id: 2,
+      videoUrl: 'https://www.youtube.com/watch?v=0Jk4-K6Vjkw',
+      fallbackTitle: 'Ontologies, LLMs, and Semantic Pipelines',
+      fallbackPresenter: 'John Beverley',
+      fallbackDate: 'November 14, 2025'
+    },
+    {
+      id: 3,
+      videoUrl: 'https://www.youtube.com/watch?v=RWpWxpGMjiU',
       fallbackTitle: 'Are we living in a simulation?',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'March 15, 2023'
     },
     {
-      id: 2,
-      videoUrl: 'https://www.youtube.com/watch?v=bj8mSbHh-qA&t=1911s',
+      id: 4,
+      videoUrl: 'https://www.youtube.com/watch?v=bj8mSbHh-qA',
       fallbackTitle: 'Introduction to Ontology Engineering',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'June 20, 2023'
     },
-    // Add your other videos here
     {
-      id: 3,
-      videoUrl: 'https://www.youtube.com/watch?v=p0buEjR3t8A&t=2s', // This is a fake URL
+      id: 5,
+      videoUrl: 'https://www.youtube.com/watch?v=p0buEjR3t8A',
       fallbackTitle: 'Introduction to Basic Formal Ontology',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'April 10, 2021'
     },
     {
-      id: 4,
-      videoUrl: 'https://www.youtube.com/watch?v=__P0HU3ln3w', // This is a fake URL
+      id: 6,
+      videoUrl: 'https://www.youtube.com/watch?v=__P0HU3ln3w',
       fallbackTitle: 'Ontology for system engineering',
       fallbackPresenter: 'Barry Smith',
       fallbackDate: 'May 5, 2023'
     }
   ];
-
+  
   // Fetch video data from YouTube API
   useEffect(() => {
     async function fetchVideoData() {
@@ -209,30 +221,72 @@ export default function FeaturedVideosSection() {
           </div>
         )}
 
-        <div className={styles.viewAllContainer}>
-          <a
-            href="https://www.youtube.com/@BarrySmithOntology"
-            className={styles.youtubeButton}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="20" 
-              height="20" 
-              viewBox="0 0 24 24" 
-              fill="currentColor"
-              className={styles.youtubeIcon}
-            >
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            Visit Our YouTube Channel
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.arrowIcon}>
-              <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M12 5L19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
-        </div>
+        <div
+  className={styles.viewAllContainer}
+  style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}
+>
+  {/* Barry Smith YouTube */}
+  <a
+    href="https://www.youtube.com/channel/UCDYw4LTZfK27Q0lJ8pxQC8Q"
+    className={styles.youtubeButton}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={styles.youtubeIcon}
+    >
+      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.246 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.196-.484-8.55-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z" />
+    </svg>
+    Visit Barry Smith’s YouTube Channel
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={styles.arrowIcon}
+    >
+      <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 5L19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  </a>
+
+  {/* John Beverley YouTube */}
+  <a
+    href="https://www.youtube.com/channel/UCtTRu7aZqprAf-YDSdxzUwg"
+    className={styles.youtubeButton}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={styles.youtubeIcon}
+    >
+      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.246 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.196-.484-8.55-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z" />
+    </svg>
+    Visit John Beverley’s YouTube Channel
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={styles.arrowIcon}
+    >
+      <path d="M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 5L19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  </a>
+</div>
       </div>
     </div>
   );

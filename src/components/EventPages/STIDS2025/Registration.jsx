@@ -57,7 +57,7 @@ export default function Registration() {
           Select the registration type that best fits your profile
         </p>
 
-        <div className={styles.pricingGrid}>
+        <div id="unclassified-registration" className={styles.pricingGrid}>
           {pricingOptions.map((option, index) => (
             <div key={index} className={styles.pricingCard}>
               <div className={styles.pricingType}>{option.type}</div>
@@ -98,7 +98,27 @@ export default function Registration() {
             </div>
           ))}
         </div>
+
+        <div id="classified-registration" style={{ marginTop: '4rem', textAlign: 'center' }}>
+          <p><strong>Classified Session Registration:</strong></p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+            <a
+              href="https://go.intelink.gov/PxGSGtN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.button} ${styles.buttonPrimary}`}
+            >
+              Register with CAC card
+            </a>
+            <a
+              href="mailto:Ontology_Registration@nga.mil"
+              className={`${styles.button} ${styles.buttonPrimary}`}
+            >
+              Email for Non-CAC Registration
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
-} 
+}

@@ -1,13 +1,7 @@
 // Trigger rebuild to deploy CEUR template ZIP
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -15,40 +9,30 @@ const config = {
   tagline: 'Advancing ontology research, education, and implementation across domains',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://ncor-network.org',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'NCOR-Organization', // Updated from CommonCoreOntology
-  projectName: 'NCOR-Network', // Updated from commoncoreontology.github.io
+  organizationName: 'NCOR-Organization',
+  projectName: 'NCOR-Network',
   trailingSlash: false,
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  
-  // Explicitly exclude the resources directory from static files copying
+
   staticDirectories: ['static'],
 
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Remove or update this if needed
           editUrl: 'https://github.com/NCOR-Organization/NCOR-Network/tree/main/',
           exclude: ['resources/**'],
         },
@@ -56,11 +40,15 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.7,
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
-  
-  // Add the wiki as a separate plugin instead of in the preset
+
   plugins: [
     [
       '@docusaurus/plugin-content-docs',
@@ -78,7 +66,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+
+      metadata: [
+        {
+          name: 'description',
+          content:
+            'NCOR is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems.',
+        },
+        { property: 'og:site_name', content: 'NCOR Network' },
+      ],
+
       image: 'img/ncor-network-logo.png',
       navbar: {
         title: 'NCOR',
@@ -99,22 +96,10 @@ const config = {
             label: 'About',
             position: 'right',
             items: [
-              {
-                label: 'Mission',
-                to: '/docs/about/mission',
-              },
-              {
-                label: 'What is Ontology',
-                to: '/docs/about/what-is-ontology',
-              },
-              {
-                label: 'Ontology for AI',
-                to: '/docs/about/ontology-for-ai',
-              },
-              {
-                label: 'Success Stories',
-                to: '/docs/about/success-stories',
-              },
+              { label: 'Mission', to: '/docs/about/mission' },
+              { label: 'What is Ontology', to: '/docs/about/what-is-ontology' },
+              { label: 'Ontology for AI', to: '/docs/about/ontology-for-ai' },
+              { label: 'Success Stories', to: '/docs/about/success-stories' },
             ],
           },
           {
@@ -122,18 +107,9 @@ const config = {
             label: 'Research',
             position: 'right',
             items: [
-              {
-                label: 'Areas',
-                to: '/docs/research/areas',
-              },
-              {
-                label: 'Projects',
-                to: '/docs/research/projects',
-              },
-              {
-                label: 'Publications',
-                to: '/docs/research/publications',
-              },
+              { label: 'Areas', to: '/docs/research/areas' },
+              { label: 'Projects', to: '/docs/research/projects' },
+              { label: 'Publications', to: '/docs/research/publications' },
             ],
           },
           {
@@ -162,45 +138,34 @@ const config = {
             label: 'Wiki',
             position: 'right',
             items: [
-              {
-                label: 'Ontology 101',
-                to: '/wiki/main-page',
-              },
-              {
-                label: 'Courses',
-                to: '/wiki/courses/barry-smith',
-              },
-              {
-                label: 'Ontologies',
-                to: '/wiki/ontologies/basic-formal-ontology',
-              },
-              {
-                label: 'Books',
-                to: '/wiki/books/why-machines-will-never-rule-the-world',
-              },
-              {
-                label: 'Glossary',
-                to: '/wiki/glossary',
-              },
+              { label: 'Ontology 101', to: '/wiki/main-page' },
+              { label: 'Courses', to: '/wiki/courses/barry-smith' },
+              { label: 'Ontologies', to: '/wiki/ontologies/basic-formal-ontology' },
+              { label: 'Books', to: '/wiki/books/why-machines-will-never-rule-the-world' },
+              { label: 'Glossary', to: '/wiki/glossary' },
             ],
           },
-          {
-            to: '/docs/events/office-hours',
-            position: 'right',
-            label: 'Events',
-            activeBasePath: '/docs/events',
-          },
+{
+  type: 'dropdown',
+  label: 'Events',
+  position: 'right',
+  activeBasePath: '/docs/events',
+  items: [
+    { label: 'Calendar', to: '/docs/events/calendar' },
+    { label: 'Office Hours', to: '/docs/events/office-hours' },
+    { label: 'Meetings and Workshops', to: '/docs/events/meetings-workshops' },
+    { label: 'Ontology 101 Working Group', to: '/docs/events/ontology-101' },
+    { label: 'Semantic Mappings Working Group', to: '/docs/events/semantic-mapping' },
+    { label: 'Common Core Ontologies Working Groups', to: '/docs/events/common-core-ontologies' },
+  ],
+},
           {
             to: '/docs/affiliates/individuals',
             position: 'right',
             label: 'Affiliates',
             activeBasePath: '/docs/affiliates',
           },
-          {
-            href: 'https://github.com/NCOR-Organization',
-            label: 'GitHub',
-            position: 'right',
-          },
+          { href: 'https://github.com/NCOR-Organization', label: 'GitHub', position: 'right' },
           {
             to: '/join',
             label: 'Join NCOR',
@@ -227,47 +192,20 @@ const config = {
           {
             title: 'Quick Links',
             items: [
-              {
-                label: 'Home',
-                to: '/',
-              },
-              {
-                label: 'About',
-                to: '/docs/about/mission',
-              },
-              {
-                label: 'Research',
-                to: '/docs/research/publications',
-              },
-              {
-                label: 'Events',
-                to: '/docs/events/office-hours',
-              },
-              {
-                label: 'People',
-                to: '/docs/affiliates/individuals',
-              },
+              { label: 'Home', to: '/' },
+              { label: 'About', to: '/docs/about/mission' },
+              { label: 'Research', to: '/docs/research/publications' },
+              { label: 'Events', to: '/docs/events/office-hours' },
+              { label: 'People', to: '/docs/affiliates/individuals' },
             ],
           },
           {
             title: 'Resources',
             items: [
-              {
-                label: 'Publications',
-                to: '/docs/research/publications',
-              },
-              {
-                label: 'Ontologies',
-                to: '/docs/get-started',
-              },
-              {
-                label: 'Useful Links',
-                to: '/docs/useful-links',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/NCOR-Organization',
-              },
+              { label: 'Publications', to: '/docs/research/publications' },
+              { label: 'Ontologies', to: '/docs/get-started' },
+              { label: 'Useful Links', to: '/docs/useful-links' },
+              { label: 'GitHub', href: 'https://github.com/NCOR-Organization' },
             ],
           },
           {
@@ -307,15 +245,17 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-    
     }),
+
   stylesheets: [
     {
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap',
       type: 'text/css',
     },
   ],
+
   headTags: [
+    // Scripts
     {
       tagName: 'script',
       attributes: {
@@ -325,15 +265,25 @@ const config = {
     },
     {
       tagName: 'script',
-      attributes: {
-        type: 'text/javascript',
-      },
+      attributes: { type: 'text/javascript' },
       innerHTML: `
         (function(){
-          emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS user ID
+          // TODO: replace with your actual EmailJS user ID or remove if unused
+          emailjs.init("YOUR_USER_ID");
         })();
       `,
     },
+
+    // Global meta tags (migrated from themeConfig.metadata)
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'description',
+        content:
+          'NCOR is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems.',
+      },
+    },
+    { tagName: 'meta', attributes: { property: 'og:site_name', content: 'NCOR Network' } },
   ],
 };
 

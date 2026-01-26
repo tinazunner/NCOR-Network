@@ -4,6 +4,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Head from '@docusaurus/Head';
+
 
 // Import the new component
 import AboutSection from '@site/src/components/AboutSection';
@@ -12,6 +14,7 @@ import PeopleSection from '@site/src/components/PeopleSection';
 import ResearchAreasSection from '@site/src/components/ResearchAreasSection';
 import EventsSection from '@site/src/components/EventsSection';
 import FeaturedVideosSection from '@site/src/components/FeaturedVideosSection';
+import PartnersSection from '@site/src/components/PartnersSection';
 
 import styles from './styles.module.css';
 
@@ -252,12 +255,26 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="NCOR - A global hub fostering National Centers for Ontological Research across diverse cultures"
-      className="homepage">
-      <HomepageHeader />
-      
+<Layout
+  title={`${siteConfig.title}`}
+  description="NCOR - A global hub fostering National Centers for Ontological Research across diverse cultures"
+  className="homepage">
+
+  {/* ✅ SEO meta tags */}
+  <Head>
+    <title>NCOR Network | Ontology Research, Collaboration & Best Practices</title>
+    <meta
+      name="description"
+      content="The NCOR Network is an international non-profit fostering ontology research, education, and interoperability for robust AI and data systems."
+    />
+    <meta
+      name="keywords"
+      content="ontology, NCOR, research, workshops, AI, education"
+    />
+  </Head>
+
+  <HomepageHeader />
+
       {/* About Section */}
       <section style={{ 
         background: '#fff',
@@ -305,15 +322,67 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
-        {/* Events section */}
-        <EventsSection />
-        
-        {/* Featured Videos section */}
-        <FeaturedVideosSection />
-        
+
+        {/* Ontology Standards */}
         <HomepageFeatures />
+
+        {/* Events */}
+        <EventsSection />
+
+        {/* Featured Videos */}
+        <FeaturedVideosSection />
+
+        {/* Our People */}
         <PeopleSection />
+
+        {/* Our Partners */}
+        <PartnersSection />
+
+          {/* Support NCOR */}
+<section style={{ background: '#fff', padding: '60px 0', borderTop: '1px solid #eee' }}>
+  <div className="container">
+    <div className="row">
+      <div className="col col--8 col--offset-2">
+        <Heading as="h2" className="text--center margin-bottom--lg">
+          Support NCOR
+        </Heading>
+
+        <p style={{ textAlign: 'justify' }}>
+          The National Center for Ontological Research (NCOR) advances foundational and applied research in ontology and semantic technologies.
+          NCOR supports education, training, and community-driven standards that enable interoperable, trustworthy data across government,
+          industry, and academia.
+        </p>
+
+        <p className="margin-top--md">Contributions to NCOR help support:</p>
+        <ul>
+          <li>Research and development in formal and applied ontology</li>
+          <li>Educational programs, workshops, and student support</li>
+          <li>Open-access training materials and public resources</li>
+          <li>Stewardship of open, standards-driven ontological infrastructure</li>
+        </ul>
+
+        <p style={{ textAlign: 'justify' }}>
+          NCOR is a U.S. 501(c)(3) public charity, and contributions are tax-deductible as permitted by law.
+        </p>
+
+        <p style={{ textAlign: 'justify' }}>
+          At this time, donations are accepted via direct arrangement. To learn more about supporting NCOR or to request documentation, please contact:
+        </p>
+
+        <div className="text--center margin-top--lg">
+          <a
+            className="button button--lg"
+            style={{ backgroundColor: '#9e7418', borderColor: '#9e7418', color: 'white' }}
+            href="mailto:info@ncor-network.org"
+          >
+            info@ncor-network.org
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
     </Layout>
   );
